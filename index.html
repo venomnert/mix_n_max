@@ -4,28 +4,36 @@
     <title>Mix n Max</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="./vendors/css/reflex.css" />
+    <link type="text/css" rel="stylesheet" href="./vendors/css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="./resource/css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700" rel="stylesheet">
   </head>
 
   <body>
     <header>
-
-      <nav id="navBar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact Us</a></li>
+      <nav class="grid--justify-end" id="navBar">
+        <ul class="grid--justify-space-around">
+            <li class="grid__col-auto"><a href="#">Home</a></li>
+            <li class="grid__col-auto"><a href="#">About</a></li>
+            <li class="grid__col-auto"><a href="#">Menu</a></li>
+            <li class="grid__col-auto"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
 
-      <div class="restaurant-info">
-        <img src="#"/>
-        <h1>Mix n Max</h1>
-        <p>Customer Testimonial</p>
+    <div class=" grid--direction-column restaurant-info">
+      <div class="grid__col-auto grid--align-center logo">
+        <img src="./resource/img/mix_n_max.png"/>
       </div>
-
+      <p class="grid__col-auto grid--align-center ">
+        The food is great and they have a good selection. There breakfast are amazing and worth every penny
+     </p>
+    </div>
     </header>
+
+    <section>
+
+
+    </section>
   </body>
 </html>
