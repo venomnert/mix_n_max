@@ -32,24 +32,18 @@ header {
 #navBar {
   background-color: rgba(12, 12, 13, 0.90);
   height: 90px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-top: 3%; /* Reason: padding percentage is relative to its containing width.
-                    On mobile change to 6%, on larger browser 2% */
 }
 
 #navBar ul {
-  margin: 0;
   list-style: none;
+  margin: 0;
   padding: 0;
-  width: 330px;
-  font-size: 87%;
+  font-size: 100%;
+  /*add burger for mobile, push elements to the right for larger screen ( x > 950) */
 }
 
 #navBar ul li {
-  display: inline-block;
-  padding-right: 5%;
+  padding: 1%;
 }
 
 #navBar ul li a:link,
