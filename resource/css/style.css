@@ -1,7 +1,10 @@
 /*
 =============General Styling=============
 */
-html { box-sizing: border-box;}
+html {
+  box-sizing: border-box;
+}
+
 *, *::before, *::after { box-sizing: inherit;}
 
 body {
@@ -15,6 +18,14 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+h1 {
+  color: #D04E33;
+  font-size: 250%;
+  word-spacing: 4px;
+  margin-bottom:20px;
+  letter-spacing: 1px;
 }
 
 /*=============ENDS=============*/
@@ -41,6 +52,7 @@ header {
   margin: 0;
   padding: 0;
   color: ##EEEEEE;
+  border-bottom: 2px solid #D04E33;
 }
 
 #navBar {
@@ -102,5 +114,27 @@ div.restaurant-info img {
   font-size: 87%;
   line-height: 160%;
   text-align: center;
+}
+/*=============ENDS=============*/
+
+/*
+=============SLIDER=============
+*/
+.storeSpecials {
+  background-color: #EEEEEE;
+}
+
+.storeSpecials h1 {
+  margin: 7% 0 3% 0;
+}
+
+.specials { width: 100%; }
+
+.special {
+  height: 300px;
+  padding: 0;
+  margin: 3% 2%; /*chnage maring when scree > 992px*/
+  border: 2px solid #D04E33;
+  border-radius: 10px;
 }
 /*=============ENDS=============*/

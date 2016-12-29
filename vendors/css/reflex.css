@@ -26,9 +26,9 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  letter-spacing: -0.31em !important;
+  /*letter-spacing: -0.31em !important; this keeps on squishing my text*/
   *letter-spacing: normal !important;
-  word-spacing: -0.43em !important;
+  /*word-spacing: -0.43em !important; this keeps on squishing my text*/
   list-style-type: none;
 }
 .grid:before,
