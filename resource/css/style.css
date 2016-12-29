@@ -19,6 +19,20 @@ a:visited {
 
 /*=============ENDS=============*/
 
+/*
+=============Header=============
+*/
+header {
+  height: 100vh;
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/egg_toast_m.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* what does this mean */
+}
+
+/*=============ENDS=============*/
 
 /*
 =============Nav Bar=============
@@ -32,6 +46,7 @@ header {
 #navBar {
   background-color: rgba(12, 12, 13, 0.90);
   height: 90px;
+  flex: 0 1 auto;
 }
 
 #navBar ul {
@@ -39,7 +54,7 @@ header {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  /*add burger for mobile, push elements to the right for larger screen ( x > 950) */
+  /*shrink font-size for mobile, push elements to the right for larger screen ( x > 950) */
 }
 
 #navBar ul li {
@@ -62,45 +77,30 @@ header {
 /*=============ENDS=============*/
 
 /*
-=============Header=============
-*/
-header {
-  height: 100vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/egg_toast_m.jpg");
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* what does this mean */
-}
-
-/*=============ENDS=============*/
-
-/*
 =============RESTAURANT INFO=============
 */
 .restaurant-info {
-  margin: 100px 0 0 0;
-  color: #EEE;
+  flex: 1 1 auto;
+  margin-top: 10%;
 }
 
-div.logo {
-    padding: 0;
-}
-
-.logo img {
+div.restaurant-info img {
   height: 325px;
   width: 325px;
-  margin: 15px;
+  padding: 0;
 }
 
-div.restaurant-info p {
+#testimonials {
+  flex: 0 1 auto;
+  color: #EEE;
+  padding-bottom: 4%; /* Closes the gap between the logo and testimonials*/
+}
+
+#testimonials blockquote p {
+  padding: 25px 17;
   font-style: italic;
-  padding: 0;
-  margin: 10px 20% 10px 30%;
   font-size: 87%;
   line-height: 160%;
+  text-align: center;
 }
-
-
 /*=============ENDS=============*/

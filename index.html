@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="grid grid--direction-column">
       <nav class="grid" id="navBar">
         <ul class="grid grid--align-center">
             <li class="grid__col-3"><a class="grid--align-self-center" href="#">Home</a></li>
@@ -21,18 +21,20 @@
         </ul>
       </nav>
 
-    <div class=" grid--direction-column restaurant-info">
-      <div class="grid__col-auto grid--align-center logo">
-        <img src="./resource/img/mix_n_max.png"/>
-      </div>
-      <p class="grid__col-auto grid--align-center ">
-        The food is great and they have a good selection. There breakfast are amazing and worth every penny
-     </p>
+    <div class="grid grid--direction-column grid--justify-center restaurant-info">
+      <img class="grid--align-self-center" src="./resource/img/mix_n_max.png"/>
+    </div>
+
+    <div class="grid" id="testimonials">
+      <blockquote class="grid grid--justify-center">
+        <p class="grid__col-auto"> <!--change class to grid__col-6 for screen x > 400px !-->
+          The food is great and they have a good selection. There breakfast are amazing and worth every penny!
+        </p>
+      </blockquote>
     </div>
     </header>
 
-    <section>
-
+    <section class="grid specials">
 
     </section>
   </body>
