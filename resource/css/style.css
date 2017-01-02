@@ -59,6 +59,7 @@ header {
   background-color: rgba(12, 12, 13, 0.90);
   height: 90px;
   flex: 0 1 auto;
+  padding: 3%; /*change percent to 1% when screen > 1800px, change to 3% when screen > 640px,  */
 }
 
 #navBar ul {
@@ -70,7 +71,7 @@ header {
 }
 
 #navBar ul li {
-  padding: 1%;
+  padding: 1% 0;
 }
 
 #navBar ul li a:link,
