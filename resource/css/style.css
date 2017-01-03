@@ -134,7 +134,7 @@ div.restaurant-info img {
 .special {
   height: 300px;
   padding: 0;
-  margin: 3% 2%; /*chnage maring when scree > 992px*/
+  margin: 3% 2%; /*change margin when scree > 992px*/
   border: 2px solid #D04E33;
   border-radius: 10px;
 }
@@ -191,7 +191,7 @@ section.menu section {
 /*=============ENDS=============*/
 
 /*
-=============MENU=============
+=============MENU ITEM=============
 */
 .item-list ul li {
   margin-top: 2.5%;
@@ -214,4 +214,38 @@ section.menu section {
   float: right;
   color: #353C3E;
 }
+/*=============ENDS=============*/
+
+/*
+=============FOOTER=============
+*/
+footer.footer {
+  margin-top: 10%;
+  height: 100px;
+  background-color: #1C2021;
+}
+.footer a {
+  margin-left: 2%;
+  cursor: pointer;
+  color: #EEE;
+}
+
+.footer a > i {
+  font-size: 215%;
+}
+
+.footer a i.facebook:hover,
+.footer a i.facebook:active {
+  color: #3b5998;
+  transition: color 0.3s;
+}
+
+.footer a i.instagram:hover,
+.footer a i.instagram:active {
+  color: #cd486b;
+  transition: color 0.3s;
+}
+
+
+
 /*=============ENDS=============*/
