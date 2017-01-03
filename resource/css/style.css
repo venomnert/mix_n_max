@@ -119,7 +119,7 @@ div.restaurant-info img {
 /*=============ENDS=============*/
 
 /*
-=============SLIDER=============
+=============SPECIALS=============
 */
 .storeSpecials {
   background-color: #EEEEEE;
@@ -137,5 +137,81 @@ div.restaurant-info img {
   margin: 3% 2%; /*chnage maring when scree > 992px*/
   border: 2px solid #D04E33;
   border-radius: 10px;
+}
+/*=============ENDS=============*/
+
+/*
+=============MENU NAVBAR=============
+*/
+header.menu {
+  height: 100%;
+  background: #EEE;
+  border-bottom: 0;
+}
+
+#navBar.menu {
+  background-color: rgba(230, 106, 57, 0.80);
+}
+
+#navBar.menu ul li a:hover,
+#navBar.menu ul li a:active {
+  color: #D04E33;
+  cursor: pointer;
+}
+/*=============ENDS=============*/
+
+/*
+=============MENU=============
+*/
+section.menu section {
+  margin-top: 10%;
+}
+
+.menu-section-info {
+  text-align: center;
+}
+.menu-section-info h1 {
+  font-weight: 400;
+  color: #353C3E;
+  margin: 3% 0 0 0;
+  /* font-size: 140% for screen < 900px */
+}
+
+.menu-section-info h3 {
+  color: #D04E33;
+}
+
+.menu-section-info img {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  border: 2px solid #E66A39;
+  margin: 5% 0 0 0;
+}
+/*=============ENDS=============*/
+
+/*
+=============MENU=============
+*/
+.item-list ul li {
+  margin-top: 2.5%;
+  padding: 0 3%;
+}
+
+.item h6 {
+  font-size: 100%;
+  margin: 3% 0 0 0;
+}
+
+.item p {
+  margin: 3% 0 0 0;
+  font-size: 80%;
+  font-style: italic;
+  color: #D04E33;
+}
+
+.item .price {
+  float: right;
+  color: #353C3E;
 }
 /*=============ENDS=============*/
