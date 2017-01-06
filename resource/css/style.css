@@ -169,6 +169,10 @@ div.restaurant-info img {
 /*
 =============MENU=============
 */
+.menu-section {
+    padding-bottom: 12%; /*change padding to 7% when screen > 1200px */
+}
+
 .menu-section section {
   margin-top: 10%;
 }
@@ -187,7 +191,7 @@ div.restaurant-info img {
   color: #D04E33;
 }
 
-.menu-section-info img {
+.menu-section-info img { /*Need to change image dimensions relative to screens size */
   height: 210px;
   width: 210px;
   border-radius: 50%;
@@ -199,10 +203,21 @@ div.restaurant-info img {
 /*
 =============MENU ITEM=============
 */
-.item-list ul li {
-  margin-top: 2.5%;
-  padding: 0 3%;
+.item-list {
+  margin-top: 2%; /*Change maring-top to 0.5% when screen > 1200px */
 }
+.item-list ul li {
+  margin-top: 5%;
+  padding: 0 3%; /*Change padding to 0 6% when screen > 1200px, change padding to 0 3% when screen > 1600px*/
+}
+
+/*
+Change padding to 0 5% when screen > 1600px
+.benedict .item-list ul li {
+  margin-top: 5%;
+  padding: 0 5%;
+}
+*/
 
 .item h6 {
   font-size: 100%;
