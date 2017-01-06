@@ -13,36 +13,35 @@
 
   <body>
     <header class="grid grid--direction-column">
-      <nav class="grid" id="navBar">
-        <ul class="grid grid--justify-end">
-            <li class="grid__col-3 grid__col-xlg-1"><a class="grid--align-self-center" href="#">Home</a></li>
-            <li class="grid__col-3 grid__col-xlg-1"><a class="grid--align-self-center" href="#">About</a></li>
-            <li class="grid__col-3 grid__col-xlg-1"><a class="grid--align-self-center" href="#">Menu</a></li>
-            <li class="grid__col-3 grid__col-xlg-1"><a class="grid--align-self-center" href="#">Contact Us</a></li>
+      <nav id="navBar" class="grid">
+        <ul class="grid grid--justify-end grid--align-center">
+            <li class="grid__col-3 grid__col-md-1 grid__col-lg-1"><a class="grid--align-self-center" href="#">Home</a></li>
+            <li class="grid__col-3 grid__col-md-1 grid__col-lg-1"><a class="grid--align-self-center" href="#">About</a></li>
+            <li class="grid__col-3 grid__col-md-1 grid__col-lg-1"><a class="grid--align-self-center" href="#">Menu</a></li>
+            <li class="grid__col-3 grid__col-md-1 grid__col-lg-1"><a class="grid--align-self-center" href="#">Contact Us</a></li>
         </ul>
       </nav>
 
-    <div class="grid grid--direction-column grid--justify-center restaurant-info">
-      <img class="grid--align-self-center" src="./resource/img/mix_n_max.png"/>
-    </div>
-
-    <div class="grid" id="testimonials">
-      <blockquote class="grid grid--justify-center">
-        <p class="grid__col-auto"> <!--change class to grid__col-6 for screen x > 400px !-->
-          The food is great and they have a good selection. There breakfast are amazing and worth every penny!
-        </p>
-      </blockquote>
-    </div>
+      <div class="restaurant-info grid grid--direction-column grid--justify-center grid--align-center">
+        <img class="" src="./resource/img/mix_n_max.png"/>
+        <div class="testimonials">
+          <blockquote>
+            <p> <!--change class to grid__col-6 for screen x > 400px !-->
+              The food is great and they have a good selection. There breakfast are amazing and worth every penny!
+            </p>
+          </blockquote>
+        </div>
+      </div>
     </header>
 
     <!-- When screen < 400px collapse specials into rows !-->
-    <section class="grid grid--direction-column storeSpecials">
-      <h1 class="grid grid--justify-center">Specials</h1>
-      <div class="grid grid--justify-space-around specials">
-        <div class="grid__col-xlg-5 grid__col-xs-12 grid__col-md-12 special">Special 1</div>
-        <div class="grid__col-xlg-5 grid__col-xs-12 grid__col-md-12 special">Special 2</div>
-        <div class="grid__col-xlg-5 grid__col-xs-12 grid__col-md-12 special">Special 3</div>
-        <div class="grid__col-xlg-5 grid__col-xs-12 grid__col-md-12 special">Special 4</div>
+    <section class="storeSpecials grid grid--direction-column grid--align-center">
+      <h1 class="">Specials</h1>
+      <div class="specials-list grid grid--justify-space-between">
+        <div class="special grid__col-lg-5 grid__col-12">Special 1</div>
+        <div class="special grid__col-lg-5 grid__col-12">Special 2</div>
+        <div class="special grid__col-lg-5 grid__col-12">Special 3</div>
+        <div class="special grid__col-lg-5 grid__col-12">Special 4</div>
       </div>
     </section>
 
