@@ -67,14 +67,13 @@ header {
 }
 
 #navBar ul li {
-  padding: 1% 0;
-  /*change width to 12.3% when screen > 992px and width to 10.33% when screen > 1200px*/
+  padding: 0;
 }
 
 #navBar ul li a:link,
 #navBar ul li a:visited {
   color: #EEE;
-  font-weight: 400;grid__col-3 grid__col-1
+  font-weight: 400;
   transition: color 0.3s;
 }
 
@@ -91,7 +90,7 @@ header {
 */
 .restaurant-info {
   flex: 1 1 auto;
-  margin-top: 3%; /* change margin-top to 5% and 3% when screen > */
+  margin-top: 3%;
 }
 
 div.restaurant-info img {
@@ -101,7 +100,7 @@ div.restaurant-info img {
 }
 
 .testimonials {
-  margin-top: 4%; /* change margin-top to 3% when screen > */
+  margin-top: 4%;
   flex: 0 1 auto;
   color: #EEE;
   text-align: center;
@@ -112,7 +111,7 @@ div.restaurant-info img {
 .testimonials blockquote p {
   margin: 0;
   font-style: italic;
-  font-size: 87%; /*change font-size to 100% when screen >  */
+  font-size: 90%;
   line-height: 150%;
 }
 /*=============ENDS=============*/
@@ -122,11 +121,11 @@ div.restaurant-info img {
 */
 .storeSpecials {
   background-color: #EEEEEE;
-  padding-bottom: 10%; /*changed padding to 7% when screen > 1200px */
+  padding-bottom: 10%;
 }
 
 .storeSpecials h1 {
-  margin: 7% 0 0 0; /*changed margin to 6% 0 0 0; when screen > 1200px */
+  margin: 7% 0 0 0;
 }
 
 .specials-list {
@@ -134,9 +133,9 @@ div.restaurant-info img {
 }
 
 .special {
-  height: 550px; /*change height 550px when screen > 1200px */
+  height: 500px;
   padding: 0;
-  margin: 7% 2% 0 2%; /*changed margin to 7% 4% 0 4%; when screen > 1200px */
+  margin: 7% 2% 0 2%;
   border: 2px solid #D04E33;
   border-radius: 10px;
 }
@@ -170,7 +169,7 @@ div.restaurant-info img {
 =============MENU=============
 */
 .menu-section {
-    padding-bottom: 12%; /*change padding to 7% when screen > 1200px */
+    padding-bottom: 12%;
 }
 
 .menu-section section {
@@ -204,20 +203,13 @@ div.restaurant-info img {
 =============MENU ITEM=============
 */
 .item-list {
-  margin-top: 2%; /*Change maring-top to 0.5% when screen > 1200px */
-}
-.item-list ul li {
-  margin-top: 5%;
-  padding: 0 3%; /*Change padding to 0 6% when screen > 1200px, change padding to 0 3% when screen > 1600px*/
+  margin-top: 2%;
 }
 
-/*
-Change padding to 0 5% when screen > 1600px
-.benedict .item-list ul li {
+.item-list ul li {
   margin-top: 5%;
-  padding: 0 5%;
+  padding: 0 3%;
 }
-*/
 
 .item h6 {
   font-size: 100%;
@@ -241,7 +233,7 @@ Change padding to 0 5% when screen > 1600px
 =============FOOTER=============
 */
 footer.footer {
-  height: 100px; /* change height to 150px when screen > 1200 */
+  height: 100px;
   background-color: #1C2021;
   border-top: 2px solid #D04E33;
 }
@@ -266,7 +258,44 @@ footer.footer {
   color: #cd486b;
   transition: color 0.3s;
 }
-
-
-
 /*=============ENDS=============*/
+
+/* ==========================MEDIA QUERIES ==========================*/
+@media (min-width: 992px) {
+  /* Header */
+  nav#navBar ul li { width: 11.3333%; }
+  nav#navBar ul { margin-right: 3%; }
+  .testimonials blockquote p { font-size: 100%; }
+
+  /* Menu Section */
+  .menu-section { padding-bottom: 10%; }
+}
+
+@media (min-width: 1200px) {
+
+  /* Header */
+  nav#navBar ul li { width: 10.3333%; }
+  .testimonials { margin-top: 3.5%; }
+
+  /* Store Special */
+  .storeSpecials { padding-bottom: 7%; }
+  .storeSpecials h1 { margin: 6% 0 0 0; }
+  .special {
+    height: 550px;
+    width: 45.6667%;
+  }
+
+  /* Menu Section */
+  .menu-section section { margin-top: 8%; }
+  .item-list { margin-top: 0.5%; }
+  .item-list ul li { padding: 0 6%; }
+
+  /* Footer */
+  footer.footer { height: 150px; }
+}
+
+@media (min-width: 1600px) {
+  /* Menu Section */
+  .item-list ul li { padding: 0 3%; }
+  .benedict .item-list ul li { padding: 0 5%; }
+}
