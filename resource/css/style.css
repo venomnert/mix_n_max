@@ -260,6 +260,73 @@ footer.footer {
 }
 /*=============ENDS=============*/
 
+/*
+================================================CONTACT US================================================
+*/
+
+/*
+=============CONTACT US HEADER AND NAVBAR/*=============
+*/
+header {
+  height: 100vh;
+  background: url("./img/contact-us.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* what does this mean */
+}
+
+#navBar.contact ul li a:hover,
+#navBar.contact ul li a:active {
+  color: #D04E33;
+  cursor: pointer;
+}
+/*=============ENDS=============*/
+
+/*
+=============CONTACT CARD/*=============
+*/
+section.contact-card {
+  background: -webkit-linear-gradient(rgba(28, 32, 33, 0.6), rgba(28, 32, 33, 0.6));
+  margin: 5% 0;
+  height: 60%;
+  width: 80%;
+  color: #EEE;
+  padding: 0 10%;
+}
+
+section.contact-card h1 {
+  margin: 0;
+  color: #EEE;
+  border-bottom: 2px solid #E66A39;
+  font-size: 275%;
+}
+
+section.contact-card h2 {
+  margin: 5% 0 0 0;
+  color: #EEE;
+  letter-spacing: 0.1em;
+  font-size: 120%;
+}
+
+section.contact-card a:link,
+section.contact-card a:visited {
+  margin: 3% 0 0 0;
+  color: #E66A39;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 150%;
+}
+
+section.contact-card a:hover,
+section.contact-card a:active {
+  cursor: pointer;
+}
+
+
+/*=============ENDS=============*/
+
 /* ==========================MEDIA QUERIES ==========================*/
 @media (min-width: 992px) {
   /* Header */
@@ -298,4 +365,7 @@ footer.footer {
   /* Menu Section */
   .item-list ul li { padding: 0 3%; }
   .benedict .item-list ul li { padding: 0 5%; }
+
+  /* Contact Card */
+  section.contact-card { margin: 4.75% 0; }
 }
