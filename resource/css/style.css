@@ -3,6 +3,7 @@
 */
 html {
   box-sizing: border-box;
+  text-rendering: optimizeSpeed;
 }
 
 *, *::before, *::after { box-sizing: inherit;}
