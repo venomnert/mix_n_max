@@ -29,6 +29,23 @@ h1 {
   letter-spacing: 1px;
 }
 
+h2 {
+  color: #D04E33;
+  font-size: 150%;
+  word-spacing: 4px;
+  margin-bottom:10px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+h3 {
+  color: #D04E33;
+  font-size: 120%;
+  word-spacing: 0.4em;
+  letter-spacing: 0.05em;
+}
+
+
 /*=============ENDS=============*/
 
 /*
@@ -56,7 +73,7 @@ header {
 }
 
 #navBar {
-  background-color: rgba(12, 12, 13, 0.90);
+  background-color: rgba(12, 12, 13, 0.4);
   height: 90px;
   flex: 0 1 auto;
 }
@@ -90,49 +107,24 @@ header {
 =============RESTAURANT INFO=============
 */
 .restaurant-info {
+  font-size: 16px;
   flex: 1 1 auto;
-  margin-top: 3%;
+  margin-top: 7em;
+  color: #EEEEEE;
 }
 
-/*
--when screen > 320 img: height 225px and width 225px
-*/
-div.restaurant-info img {
-  height: 325px;
-  width: 325px;
+div.restaurant-info img.logo {
+  height: 300px;
+  width: 300px;
   padding: 0;
 }
 
-/*
--when screen > 320:
-  -margin-top: 15%;
-*/
-.testimonials {
-  margin-top: 4%;
-  flex: 0 1 auto;
-  color: #EEE;
-  text-align: center;
+p.services {
+  font-size: 2em;
+  word-spacing: 0.5em;
+  margin: 2em 0 0 0;
 }
 
-/*
--when screen > 320:
-  -margin: 0%;
-*/
-.testimonials blockquote {
-  margin: 0 20%;
-}
-
-/*
--when screen > 320:
-  -font-size: 75%;
-  -line-height: 120%
-*/
-.testimonials blockquote p {
-  margin: 0;
-  font-style: italic;
-  font-size: 90%;
-  line-height: 150%;
-}
 /*=============ENDS=============*/
 
 /*
@@ -143,21 +135,65 @@ div.restaurant-info img {
   padding-bottom: 10%;
 }
 
-.storeSpecials h1 {
-  margin: 7% 0 0 0;
-}
-
-.specials-list {
-  width: 100%;
+.storeSpecials h3 {
+  margin: 0;
+  position: relative;
+  bottom: -1.65em;
+  padding: 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 2.272em;
+  z-index: 50;
+  background: #FFF;
+  font-style: italic;
 }
 
 .special {
-  height: 500px;
-  padding: 0;
-  margin: 7% 2% 0 2%;
-  border: 2px solid #D04E33;
-  border-radius: 10px;
+  color: #353C3E;
+  padding: 2em;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #FFF;
 }
+
+.special-container img.special-food {
+  padding: 0 1.2em 0 0;
+  height: 135px;
+  width: 135px;
+}
+
+.special-desc {
+  padding: 0 0 2em 0;
+}
+
+.special-desc h4 {
+  display: inline;
+  margin: 1em 0 0 0;
+  letter-spacing: 0.08em;
+}
+
+.special-desc span.price {
+  font-size: 1.2em;
+  color: #D04E33;
+  font-weight: 200;
+}
+
+.special-desc span.price::before {
+  content: " .....................................................................";
+  margin-right: 0.1em;
+  color: #353C3E;
+  font-weight: 200;
+}
+
+.special-desc p {
+  margin: 1em 0 0 0;
+  font-size: 0.7em;
+  color: #353C3E;
+  line-height: 1.45em;
+}
+
+
+
+
 /*=============ENDS=============*/
 
 /*
@@ -360,12 +396,7 @@ section.contact-card a:active {
     height: 225px;
     width: 225px;
   }
-  .testimonials { margin-top: 15%; }
-  .testimonials blockquote { margin: 0; }
-  .testimonials blockquote p {
-    font-size: 75%;
-    line-height: 120%;
-  }
+  .services { margin-top: 15%; }
 }
 
 @media (min-width: 400px) and (max-width: 529px) {
@@ -381,12 +412,7 @@ section.contact-card a:active {
     height: 275px;
     width: 275px;
   }
-  .testimonials { margin-top: 10%; }
-  .testimonials blockquote { margin: 0 5%; }
-  .testimonials blockquote p {
-    font-size: 90%;
-    line-height: 125%;
-  }
+  .services { margin-top: 10%; }
 }
 
 @media (min-width: 530px) and (max-width: 671px) {
@@ -404,9 +430,7 @@ section.contact-card a:active {
     height: 300px;
     width: 300px;
   }
-  .testimonials { margin-top: 7%; }
-  .testimonials blockquote { margin: 0 6%; }
-  .testimonials blockquote p { line-height: 140%; }
+  .services { margin-top: 7%; }
 }
 
 @media (min-width: 672px) and (max-width: 725px) {
@@ -417,9 +441,7 @@ section.contact-card a:active {
     height: 315px;
     width: 315px;
   }
-  .testimonials { margin-top: 6%; }
-  .testimonials blockquote { margin: 0 11%; }
-  .testimonials blockquote p { line-height: 140%; }
+  .services { margin-top: 6%; }
 }
 
 @media (min-width: 726px)  and (max-width: 745px) {
@@ -428,28 +450,22 @@ section.contact-card a:active {
     height: 325px;
     width: 325px;
   }
-  .testimonials { margin-top: 5%; }
-  .testimonials blockquote { margin: 0 13%; }
+  .services { margin-top: 5%; }
 }
 
 @media (min-width: 746px)  and (max-width: 835px) {
   /* Restaurant Info */
-  .testimonials { margin-top: 5%; }
-  .testimonials blockquote { margin: 0 16%; }
+  .services { margin-top: 5%; }
 }
 
 @media (min-width: 836px)  and (max-width: 917px) {
   /* Restaurant Info */
-  .testimonials { margin-top: 5%; }
-  .testimonials blockquote { margin: 0 19%; }
+  .services { margin-top: 5%; }
 }
 @media (min-width: 992px) {
   /* Header */
   nav#navBar ul { margin-right: 3%; }
   nav#navBar ul li { width: 11.3333%; }
-
-  /* Restaurant Info */
-  .testimonials blockquote p { font-size: 100%; }
 
   /* Menu Section */
   .menu-section { padding-bottom: 10%; }
@@ -459,7 +475,7 @@ section.contact-card a:active {
 
   /* Header */
   nav#navBar ul li { width: 10.3333%; }
-  .testimonials { margin-top: 3.5%; }
+  .services { margin-top: 3.5%; }
 
   /* Store Special */
   .storeSpecials { padding-bottom: 7%; }
