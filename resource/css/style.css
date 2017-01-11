@@ -67,12 +67,14 @@ header {
 =============Nav Bar=============
 */
 header {
+  /* font-size: 20px */
   margin: 0;
   padding: 0;
   color: ##EEEEEE;
 }
 
 #navBar {
+  font-size: 1.20em;
   background-color: rgba(12, 12, 13, 0.4);
   height: 90px;
   flex: 0 1 auto;
@@ -85,7 +87,7 @@ header {
 }
 
 #navBar ul li {
-  padding: 0;
+  padding: 1em 0;
 }
 
 #navBar ul li a:link,
@@ -100,20 +102,19 @@ header {
   color: #E67E22;
   cursor: pointer;
 }
-
 /*=============ENDS=============*/
 
 /*
 =============RESTAURANT INFO=============
 */
 .restaurant-info {
-  font-size: 16px;
+  font-size: 0.8em;
   flex: 1 1 auto;
   margin-top: 7em;
   color: #EEEEEE;
 }
 
-div.restaurant-info img.logo {
+div.restaurant-info .logo {
   height: 300px;
   width: 300px;
   padding: 0;
@@ -131,6 +132,7 @@ p.services {
 =============SPECIALS=============
 */
 .storeSpecials {
+  font-size: 20px;
   background-color: #EEEEEE;
   padding-bottom: 10%;
 }
@@ -162,7 +164,7 @@ p.services {
 }
 
 .special-desc {
-  padding: 0 0 2em 0;
+  padding: 1em 0 0 0;
 }
 
 .special-desc h4 {
@@ -178,10 +180,12 @@ p.services {
 }
 
 .special-desc span.price::before {
-  content: " .....................................................................";
+  content: " .............................................................";
   margin-right: 0.1em;
   color: #353C3E;
   font-weight: 200;
+  font-size: 0.6em;
+  letter-spacing: inherit;
 }
 
 .special-desc p {
@@ -190,10 +194,6 @@ p.services {
   color: #353C3E;
   line-height: 1.45em;
 }
-
-
-
-
 /*=============ENDS=============*/
 
 /*
@@ -378,127 +378,193 @@ section.contact-card a:hover,
 section.contact-card a:active {
   cursor: pointer;
 }
-
-
 /*=============ENDS=============*/
 
 /* ==========================MEDIA QUERIES ==========================*/
-@media (min-width: 320px) and (max-width: 399px){
-  /* Navbar */
-  #navBar ul { margin-right: 4%;}
-  #navBar ul li {
-    font-size: 72%;
-    padding: 5% 0;
+@media(min-width: 992px) { /* screen greater than 992px */
+  /* NavBar */
+  #navBar ul {
+    margin-right: 1em;
   }
 
-  /* Restaurant Info */
-  div.restaurant-info img {
-    height: 225px;
-    width: 225px;
-  }
-  .services { margin-top: 15%; }
-}
-
-@media (min-width: 400px) and (max-width: 529px) {
-  /* Navbar */
-  #navBar ul { margin-right: 4%;}
-  #navBar ul li {
-    font-size: 92%;
-    padding: 3% 0;
-  }
-
-  /* Restaurant Info */
-  div.restaurant-info img {
-    height: 275px;
-    width: 275px;
-  }
-  .services { margin-top: 10%; }
-}
-
-@media (min-width: 530px) and (max-width: 671px) {
-  /* Navbar */
-  #navBar ul { margin-right: 4%;}
-  #navBar ul li {
-    font-size: 100%;
-    padding: 3% 0;
-  }
-
-  /* Restaurant Info */
-  div.restaurant-info { margin-top: 10%; }
-
-  div.restaurant-info img {
-    height: 300px;
-    width: 300px;
-  }
-  .services { margin-top: 7%; }
-}
-
-@media (min-width: 672px) and (max-width: 725px) {
-  /* Restaurant Info */
-  div.restaurant-info { margin-top: 8%; }
-
-  div.restaurant-info img {
-    height: 315px;
-    width: 315px;
-  }
-  .services { margin-top: 6%; }
-}
-
-@media (min-width: 726px)  and (max-width: 745px) {
-  /* Restaurant Info */
-  div.restaurant-info img {
-    height: 325px;
-    width: 325px;
-  }
-  .services { margin-top: 5%; }
-}
-
-@media (min-width: 746px)  and (max-width: 835px) {
-  /* Restaurant Info */
-  .services { margin-top: 5%; }
-}
-
-@media (min-width: 836px)  and (max-width: 917px) {
-  /* Restaurant Info */
-  .services { margin-top: 5%; }
-}
-@media (min-width: 992px) {
-  /* Header */
-  nav#navBar ul { margin-right: 3%; }
-  nav#navBar ul li { width: 11.3333%; }
-
-  /* Menu Section */
-  .menu-section { padding-bottom: 10%; }
-}
-
-@media (min-width: 1200px) {
-
-  /* Header */
-  nav#navBar ul li { width: 10.3333%; }
-  .services { margin-top: 3.5%; }
-
-  /* Store Special */
-  .storeSpecials { padding-bottom: 7%; }
-  .storeSpecials h1 { margin: 6% 0 0 0; }
+  /* Special Menu */
   .special {
-    height: 550px;
-    width: 45.6667%;
+    border-right: 1px solid #e0e0e0;
+  }
+  .special-desc {
+    width: 76%;
   }
 
-  /* Menu Section */
-  .menu-section section { margin-top: 8%; }
-  .item-list { margin-top: 0.5%; }
-  .item-list ul li { padding: 0 6%; }
-
-  /* Footer */
-  footer.footer { height: 150px; }
 }
 
-@media (min-width: 1600px) {
-  /* Menu Section */
-  .item-list ul li { padding: 0 3%; }
-  .benedict .item-list ul li { padding: 0 5%; }
+@media (max-width: 1570px) {
+  /* NavBar */
+  #navBar ul li {
+    width: 9.333333%;
+  }
+}
 
-  /* Contact Card */
-  section.contact-card { margin: 4.75% 0; }
+@media (max-width: 1410px) {
+  /* NavBar */
+  #navBar ul li {
+    width: 10.333333%;
+  }
+}
+
+@media (max-width: 1275px) {
+  /* NavBar */
+  #navBar ul li {
+    width: 11.333333%;
+  }
+}
+
+@media (max-width: 1165px) {
+  /* NavBar */
+  #navBar ul {
+    margin-right: 0;
+    justify-content: center;
+  }
+  #navBar ul li {
+    width: 25%;
+  }
+}
+
+
+@media(max-width: 1600px) and (min-width: 992px){
+  .special {
+    width: 48%;
+  }
+  .special-desc span.price::before {
+    content: " ..........................................................";
+  }
+  .special-desc {
+    width: 72%;
+  }
+}
+
+@media (max-width: 1370px) {
+  .special {
+    padding: 1.5em;
+  }
+  .special-desc span.price::before {
+    content: " ........................................";
+  }
+  .special-desc {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1085px) and (min-width: 1016px){
+  .special-desc span.price::before {
+    content: " ..................................";
+  }
+  .special-container img.special-food {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .special-desc span.price::before {
+    content: " .............................";
+  }
+  .special-container img.special-food {
+    height: 120px;
+    width: 120px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .special {
+    padding: 2em;
+  }
+  .special-desc span.price::before {
+    content: " .......................................................";
+  }
+  .special-desc {
+    width: 75%;
+  }
+}
+
+@media (max-width: 840px) {
+  .special-desc span.price::before {
+    content: " .........................................";
+  }
+}
+
+@media (max-width: 765px) {
+
+  /* NavBar */
+  #navBar {
+    font-size: 1.1em;
+  }
+
+  /* Speical Menu */
+  .special-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special-container img.special-food {
+    width: 125px;
+    padding: 0;
+  }
+
+  .special-desc {
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  .special-desc span.price {
+    font-size: 1.5em;
+    margin-left: 1em;
+  }
+  .special-desc span.price::before {
+    content: "";
+  }
+}
+
+@media (max-width: 610px) {
+  /* NavBar */
+  #navBar {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 570px) {
+  .storeSpecials h3 {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  /* NavBar */
+  #navBar {
+    height: 155px;
+  }
+  #navBar ul li {
+    margin-top: 0.4em;
+    width: 45%;
+  }
+  #navBar ul li a {
+    padding-bottom: 0.15em;
+    border-bottom: 1px solid #D04E33;
+  }
+}
+@media (max-width: 405px) {
+  .special {
+    width: 82%;
+    padding: 1.5em;
+  }
+  .storeSpecials h3 {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 340px) {
+  .special-desc span.price {
+    margin-left: 0.5em;
+  }
 }
