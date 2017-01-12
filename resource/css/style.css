@@ -207,8 +207,12 @@ p.services {
 ================================================MENU================================================
 */
 
+body.menu-body {
+  background-color: #EEEEEE;
+}
+
 header.menu-header {
-  height: 65vh;
+  height: 60vh;
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-450.jpeg");
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -245,72 +249,113 @@ header.menu-header {
 .menu-section {
     padding-bottom: 12%;
 }
+.menu-section section {
+  margin-top: 7em;
+}
+
+.item-list {
+  margin-top: 3em;
+}
+
 
 .banner {
-  background: #1C2021;
-  height: 450px;
-}
-
-.banner img{
   width: 100%;
-  height: 450px;
-  opacity: 0.6;
-}
-
-.menu-section section {
-  margin-top: 10%;
-}
-
-.menu-section-info {
+  height: 400px;
   text-align: center;
+  background-repeat: no-repeat;
 }
-.menu-section-info h1 {
-  font-weight: 400;
+.banner h1 {
+  margin: 0.7em 0 0 0;
+  font-size: 190%;
+  font-weight: 200;
+  color: #EEEEEE;
+}
+h1.first-item {
+  margin: 2.2em 0 0 0;
+}
+
+.starters .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/fries-1280.jpeg");
+  background-size: 100% 100%;
+}
+.starters .banner h1.first-item {
+  margin: 4em 0 0 0;
+}
+
+.salad-soups .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/salad-1280.jpg");
+  background-size: 100% 100%;
+}
+
+.social-sandwich .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/sandwich-1280.jpeg");
+  background-size: 100% 100%;
+}
+
+.burger-wrap .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/burger-640.jpeg");
+  background-size: cover;
+}
+
+.main-dish .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/salmon-1280.jpg");
+  background-size: 100% 120%;
+}
+.main-dish .banner h1.first-item {
+  margin: 4em 0 0 0;
+}
+
+.breakfast-benedict .banner {
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/pancake-1280.jpg");
+  background-size: cover;
+}
+
+/* MENU ITEM */
+.sub-menu-section h2 {
+  font-size: 135%;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0 0 1em 0;
   color: #353C3E;
-  margin: 3% 0 0 0;
-  /* font-size: 140% for screen < 900px */
+  border-bottom: 2px solid #d8d8d8;
+}
+h2.first-item {
+  margin-top: 2em;
 }
 
-.menu-section-info h3 {
-  color: #D04E33;
+.item {
+  margin-top: 0.9em;
 }
-
-.menu-section-info img { /*Need to change image dimensions relative to screens size */
-  height: 210px;
-  width: 210px;
-  border-radius: 50%;
-  border: 2px solid #E66A39;
-  margin: 5% 0 0 0;
+.item.first-item {
+  margin-top: 2em;
 }
-/*=============ENDS=============*/
-
-/*
-=============MENU ITEM=============
-*/
-.item-list {
-  margin-top: 2%;
+.item.alignment {
+  margin-top: 5em;
 }
-
-.item-list ul li {
-  margin-top: 5%;
-  padding: 0 3%;
-}
-
 .item h6 {
   font-size: 100%;
-  margin: 3% 0 0 0;
+  font-weight: 400;
+  color: #353C3E;
+  margin: 1em 0 0 0;
+  letter-spacing: 0.07em;
 }
-
-.item p {
-  margin: 3% 0 0 0;
-  font-size: 80%;
-  font-style: italic;
-  color: #D04E33;
-}
-
 .item .price {
   float: right;
+  font-weight: 600;
+}
+.item .price::before {
+  content: " ..............";
+  margin-right: 0.7em;
   color: #353C3E;
+  font-weight: 200;
+  font-size: 0.6em;
+  letter-spacing: inherit;
+}
+.item p {
+  margin: 1em 0 0 0;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #D04E33;
 }
 /*=============ENDS=============*/
 
