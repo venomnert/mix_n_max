@@ -208,13 +208,14 @@ p.services {
 */
 
 header.menu-header {
-  height: 450px;
+  height: 65vh;
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-450.jpeg");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 0 -25px;
 }
 
 #navBar.menu {
@@ -223,23 +224,37 @@ header.menu-header {
 
 .menu-description {
   font-size: 0.75em;
+  color: #353C3E;
 }
 
 .menu-description article {
-  padding: 7em 1.5em;
+  width: 47.666667%;
+  padding: 7em 1.5em 0 0;
+}
+
+.menu-description article:nth-child(1) {
+  padding-left: 1.5em;
 }
 
 .menu-description article p {
-  line-height: 1.75em;
+  line-height: 1.8em;
   word-spacing: 0.05em;
 }
-/*=============ENDS=============*/
 
-/*
-=============MENU=============
-*/
+/* MENU LIST */
 .menu-section {
     padding-bottom: 12%;
+}
+
+.banner {
+  background: #1C2021;
+  height: 450px;
+}
+
+.banner img{
+  width: 100%;
+  height: 450px;
+  opacity: 0.6;
 }
 
 .menu-section section {
