@@ -114,19 +114,25 @@ header {
   color: #EEEEEE;
 }
 
-div.restaurant-info .logo {
-  height: 300px;
-  width: 300px;
+div.restaurant-info img.logo {
+  height: 18.75em;
+  width: 18.75em;
   padding: 0;
+}
+
+.restaurant-info h1 {
+  font-size: 475%;
+  font-family: 'Black Ops One', cursive;
+  font-weight: 400;
+  margin: -50px 0 0 0;
+
 }
 
 p.services {
   font-size: 2em;
   word-spacing: 0.5em;
-  margin: 2em 0 0 0;
+  margin: 1em 0 0 0;
 }
-
-
 /*=============ENDS=============*/
 
 /*
@@ -502,7 +508,7 @@ section.contact-card a:active {
   }
 
   /* Restaurant Info */
-  p.services { font-size: 1.7em; }
+  .restaurant-info { font-size: 0.7em; }
 
   /* Speical Menu */
   .special-container {
@@ -535,15 +541,16 @@ section.contact-card a:active {
   #navBar {
     font-size: 1em;
   }
-
   /* Restaurant Info */
-  p.services { font-size: 1.5em; }
+  .restaurant-info { font-size: 0.6em; }
 }
 
 @media (max-width: 570px) {
+  /* Special Menu */
   .storeSpecials h3 {
     font-size: 100%;
   }
+
 }
 
 @media (max-width: 530px) {
@@ -559,22 +566,23 @@ section.contact-card a:active {
     padding-bottom: 0.15em;
     border-bottom: 1px solid #D04E33;
   }
-
   /* Restaurant Info */
-  p.services { font-size: 1.3em; }
+  .restaurant-info { font-size: 0.5em; margin-top: 13em;}
 }
 
 @media (max-width: 500px) {
   /* Restaurant Info */
-  p.services { font-size: 1.2em; }
+  .restaurant-info { font-size: 0.45em; margin-top: 16em;}
 }
 
 @media (max-width: 405px) {
   /* Restaurant Info */
   .restaurant-info {
+    font-size: 0.4em;
     text-align: center;
+    margin-top: 18em;
   }
-  p.services { font-size: 1.3em; margin: 2em 7em; }
+  p.services { margin-left: 11em; margin-right: 11em; }
 
   .special {
     width: 82%;
