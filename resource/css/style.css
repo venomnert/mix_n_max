@@ -207,23 +207,31 @@ p.services {
 ================================================MENU================================================
 */
 
-/*
-=============MENU HEADER and NAVBAR=============
-*/
-.menu-header {
-  height: 100%;
-  background: #EEE;
-  border-bottom: 0;
+header.menu-header {
+  height: 450px;
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-450.jpeg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #navBar.menu {
-  background-color: rgba(230, 106, 57, 0.80);
+  background-color: rgba(12, 12, 13, 0);
 }
 
-#navBar.menu ul li a:hover,
-#navBar.menu ul li a:active {
-  color: #D04E33;
-  cursor: pointer;
+.menu-description {
+  font-size: 0.75em;
+}
+
+.menu-description article {
+  padding: 7em 1.5em;
+}
+
+.menu-description article p {
+  line-height: 1.75em;
+  word-spacing: 0.05em;
 }
 /*=============ENDS=============*/
 
