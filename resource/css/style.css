@@ -674,7 +674,7 @@ section.contact-card a:active {
 
 @media (max-width: 405px) {
   /* NavBar */
-  #navBar { height: 145px; }
+  #navBar { height: 135px; }
   #navBar ul li { padding: 0.8em 0; }
 
   /* Restaurant Info */
