@@ -110,7 +110,7 @@ header {
 .restaurant-info {
   font-size: 0.8em;
   flex: 1 1 auto;
-  margin-top: 7em;
+  margin-top: 6em;
   color: #EEEEEE;
 }
 
@@ -481,69 +481,40 @@ section.contact-card a:active {
   }
 
   /* Special Menu */
-  .special {
-    border-right: 1px solid #e0e0e0;
-  }
-  .special-desc {
-    width: 76%;
-  }
+  .special { border-right: 1px solid #e0e0e0; }
+  .special-desc { width: 76%; }
 
   /* Menu */
-  .menu-description {
-    justify-content: center;
-  }
-  .menu-description article {
-    width: 34.666667%;
-  }
+  .menu-description { justify-content: center; }
+  .menu-description article { width: 34.666667%; }
   .menu-description article:nth-child(1) {
     padding-left: 0;
     padding-right: 2em;
   }
-  .menu-section section {
-    margin-top: 4em;
-  }
-  .item-list {
-    justify-content: center;
-  }
-  .item-list .sub-menu-section:nth-child(1) {
-    margin-right: 1em;
-  }
-  .sub-menu-section {
-    width: 40%;
-  }
-
+  .menu-section section { margin-top: 4em; }
+  .item-list { justify-content: center; }
+  .item-list .sub-menu-section:nth-child(1) { margin-right: 1em; }
+  .sub-menu-section { width: 40%; }
 }
 
 @media (max-width: 1570px) {
   /* NavBar */
-  #navBar ul li {
-    width: 9.333333%;
-  }
+  #navBar ul li { width: 9.333333%; }
   /* Menu */
-  .menu-description article {
-    width: 39.666667%;
-  }
-  .menu-description {
-    justify-content: center;
-  }
+  .menu-description article { width: 39.666667%; }
+  .menu-description { justify-content: center; }
 }
 
 @media (max-width: 1410px) {
   /* NavBar */
-  #navBar ul li {
-    width: 10.333333%;
-  }
+  #navBar ul li { width: 10.333333%; }
   /* Menu */
-  .sub-menu-section {
-    width: 48%;
-  }
+  .sub-menu-section { width: 48%; }
 }
 
 @media (max-width: 1275px) {
   /* NavBar */
-  #navBar ul li {
-    width: 11.333333%;
-  }
+  #navBar ul li { width: 11.333333%; }
 }
 
 @media (max-width: 1165px) {
@@ -552,37 +523,31 @@ section.contact-card a:active {
     margin-right: 0;
     justify-content: center;
   }
-  #navBar ul li {
-    width: 25%;
-  }
+  #navBar ul li { width: 25%; }
 }
 
 
 @media(max-width: 1600px) and (min-width: 992px){
-  .special {
-    width: 48%;
-  }
+
+  /* Special Menu */
+  .special { width: 48%; }
   .special-desc span.price::before {
     content: " ..........................................................";
   }
-  .special-desc {
-    width: 72%;
-  }
+  .special-desc { width: 72%; }
 }
 
 @media (max-width: 1370px) {
-  .special {
-    padding: 1.5em;
-  }
+  /* Special Menu */
+  .special { padding: 1.5em; }
   .special-desc span.price::before {
     content: " ........................................";
   }
-  .special-desc {
-    width: 70%;
-  }
+  .special-desc { width: 70%; }
 }
 
 @media (max-width: 1085px) and (min-width: 1016px){
+    /* Special Menu */
   .special-desc span.price::before {
     content: " ..................................";
   }
@@ -593,6 +558,7 @@ section.contact-card a:active {
 }
 
 @media (max-width: 1015px) {
+  /* Special Menu */
   .special-desc span.price::before {
     content: " .............................";
   }
@@ -600,56 +566,37 @@ section.contact-card a:active {
     height: 120px;
     width: 120px;
   }
-
 }
 
 @media (max-width: 992px) {
-  .special {
-    padding: 2em;
-  }
+  /* Special Menu */
+  .special { padding: 2em; }
   .special-desc span.price::before {
     content: " .......................................................";
   }
-  .special-desc {
-    width: 75%;
-  }
+  .special-desc { width: 75%; }
 }
 
 @media (max-width: 840px) {
-  /* Home */
+  /* Special Menu */
   .special-desc span.price::before {
     content: " .........................................";
   }
   /* Menu */
-  .menu-description article {
-    width: 99.666667%;
-  }
+  .menu-description article { width: 99.666667%; }
   .menu-description article:nth-last-child(1) {
     padding-top: 3em;
     padding-left: 1.5em;
   }
-  .menu-section section {
-      margin-top: 6em;
-  }
-  .sub-menu-section {
-    width: 85%;
-  }
-  h2.first-item {
-    margin-top: 4em;
-  }
+  .menu-section section { margin-top: 6em; }
+  .sub-menu-section { width: 85%; }
+  h2.first-item { margin-top: 4em; }
   .social-sandwich .item-list .sub-menu-section:nth-last-child(1) h2 {
     margin-top: 4em;
   }
-
-  .item-list {
-    justify-content: center;
-  }
-  .item-list .sub-menu-section:nth-child(1) {
-    padding-bottom: 0;
-  }
-  .item-list .sub-menu-section:nth-last-child(1) {
-    padding-top: 0;
-  }
+  .item-list { justify-content: center; }
+  .item-list .sub-menu-section:nth-child(1) { padding-bottom: 0; }
+  .item-list .sub-menu-section:nth-last-child(1) { padding-top: 0; }
   .item.alignment {
     margin-top: 0.9em;
   }
@@ -658,14 +605,12 @@ section.contact-card a:active {
 @media (max-width: 765px) {
 
   /* NavBar */
-  #navBar {
-    font-size: 1.1em;
-  }
+  #navBar { font-size: 1.1em; }
 
   /* Restaurant Info */
   .restaurant-info { font-size: 0.7em; }
 
-  /* Speical Menu */
+  /* Special Menu */
   .special-container {
     flex-direction: column;
     align-items: center;
@@ -686,9 +631,7 @@ section.contact-card a:active {
     font-size: 1.5em;
     margin-left: 1em;
   }
-  .special-desc span.price::before {
-    content: "";
-  }
+  .special-desc span.price::before { content: ""; }
 
   /* Contact */
   section.contact-card { font-size: 0.8em; }
@@ -696,27 +639,19 @@ section.contact-card a:active {
 
 @media (max-width: 610px) {
   /* NavBar */
-  #navBar {
-    font-size: 1em;
-  }
+  #navBar { font-size: 1em; }
   /* Restaurant Info */
   .restaurant-info { font-size: 0.6em; }
-
 }
 
 @media (max-width: 570px) {
   /* Special Menu */
-  .storeSpecials h3 {
-    font-size: 100%;
-  }
-
+  .storeSpecials h3 { font-size: 100%; }
 }
 
 @media (max-width: 530px) {
   /* NavBar */
-  #navBar {
-    height: 155px;
-  }
+  #navBar { height: 155px; }
   #navBar ul li {
     margin-top: 0.4em;
     width: 45%;
@@ -726,7 +661,7 @@ section.contact-card a:active {
     border-bottom: 1px solid #D04E33;
   }
   /* Restaurant Info */
-  .restaurant-info { font-size: 0.5em; margin-top: 13em;}
+  .restaurant-info { font-size: 0.5em; margin-top: 11em;}
 
   /* Contact */
   section.contact-card { font-size: 0.65em; }
@@ -734,7 +669,7 @@ section.contact-card a:active {
 
 @media (max-width: 500px) {
   /* Restaurant Info */
-  .restaurant-info { font-size: 0.45em; margin-top: 16em;}
+  .restaurant-info { font-size: 0.45em; margin-top: 14em;}
 
   /* Contact Us */
   section.contact-card { padding: 0 4em; }
@@ -745,38 +680,30 @@ section.contact-card a:active {
   .restaurant-info {
     font-size: 0.4em;
     text-align: center;
-    margin-top: 18em;
+    margin-top: 13em;
   }
-  p.services { margin-left: 11em; margin-right: 11em; }
+  p.services { margin: 2em 11em; }
 
+  /* Special Menu */
   .special {
     width: 82%;
     padding: 1.5em;
   }
-  .storeSpecials h3 {
-    font-size: 85%;
-  }
+  .storeSpecials h3 { font-size: 85%; }
 
   /* Menu */
-  .banner h1 {
-    font-size: 140%;
-  }
+  .banner h1 { font-size: 140%; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
     margin-top: 6em;
   }
-  .banner h1.first-item {
-    margin-top: 5.2em;
-  }
-  .sub-menu-section {
-    font-size: 0.9em;
-  }
+  .banner h1.first-item { margin-top: 5.2em; }
+  .sub-menu-section { font-size: 0.9em; }
 
   /* Contact */
   section.contact-card {
     font-size: 0.60em;
     padding: 0 3em;
   }
-
 }
 
 @media (max-width: 340px) {
@@ -784,6 +711,9 @@ section.contact-card a:active {
   .special-desc span.price {
     margin-left: 0.5em;
   }
+
+  /* Restaurant Info */
+  .restaurant-info { font-size: 0.37em; }
 
   /* Contact */
   section.contact-card {
