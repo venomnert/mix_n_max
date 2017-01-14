@@ -673,6 +673,10 @@ section.contact-card a:active {
 }
 
 @media (max-width: 405px) {
+  /* NavBar */
+  #navBar { height: 145px; }
+  #navBar ul li { padding: 0.8em 0; }
+
   /* Restaurant Info */
   .restaurant-info {
     font-size: 0.4em;
