@@ -163,6 +163,9 @@ p.services {
   background: #FFF;
 }
 
+.specials-list div.special:nth-child(odd) {
+  background-color: #E67E22;
+}
 .special-container img.special-food {
   padding: 0 1.2em 0 0;
   height: 135px;
@@ -184,6 +187,9 @@ p.services {
   color: #D04E33;
   font-weight: 200;
 }
+.specials-list div.special:nth-child(odd) .price{
+  color: #EEE;
+}
 
 .special-desc span.price::before {
   content: " .............................................................";
@@ -201,6 +207,50 @@ p.services {
   line-height: 1.45em;
 }
 /*=============ENDS=============*/
+
+
+/*
+================================================ABOUT================================================
+*/
+.about-header {
+  height: 60vh;
+  background: url("./img/about-filter-1200.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 -205px;
+}
+
+#navBar.about ul li a:hover,
+#navBar.about ul li a:active {
+  color: #D04E33;
+  cursor: pointer;
+}
+section.about {
+  text-align: center;
+}
+
+section.about h1 {
+  margin: 1.5em 0 0 0;
+  padding: 0 0 0.2em 0;
+  border-bottom: 2px solid #1C2021;
+}
+
+section.about p {
+  font-size: 0.8em;
+  line-height: 1.75em;
+  margin: 2em 0 0 0;
+  padding: 0 10%;
+  color: #3E4651;
+}
+
+section.about p:nth-last-child(1) {
+  margin: 1.3em 0 7em 0;
+}
+/*=============ENDS=============*/
+
 
 /*
 ================================================MENU================================================
@@ -295,7 +345,7 @@ h1.first-item {
 }
 
 .main-dish .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/main.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/main-915.jpg");
   background-size: cover;
 }
 .main-dish .banner h1.first-item {
@@ -376,6 +426,77 @@ h6 sup a {
 /*=============ENDS=============*/
 
 /*
+================================================CONTACT US================================================
+*/
+
+/*
+=============CONTACT US HEADER AND NAVBAR/*=============
+*/
+.contact-header {
+  height: 100vh;
+  background:  -webkit-linear-gradient(rgba(40, 40, 48, 0.5), rgba(40, 40, 48, 0.5)), url("./img/contact-us-1600.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#navBar.contact {
+  background-color: rgba(12, 12, 13, 0);
+}
+
+#navBar.contact ul li a:hover,
+#navBar.contact ul li a:active {
+  color: #D04E33;
+  cursor: pointer;
+}
+/*=============ENDS=============*/
+
+/*
+=============CONTACT CARD/*=============
+*/
+section.contact-card {
+  background: -webkit-linear-gradient(rgba(28, 32, 33, 0.5), rgba(28, 32, 33, 0.5));
+  margin: 2.25em 0;
+  width: 75%;
+  color: #EEE;
+  padding: 0 4.5em;
+}
+
+section.contact-card h1 {
+  margin: 0;
+  color: #EEE;d
+  font-family: 'Black Ops One', cursive;
+  border-bottom: 2px solid #E66A39;
+  font-size: 275%;
+  font-weight: 400;
+}
+
+section.contact-card .address:link,
+section.contact-card .address:visited {
+  font-size: 1.25em;
+  padding: 1.5em 0 0 0;
+  color: #EEE;
+  letter-spacing: 0.1em;
+}
+
+section.contact-card a:link,
+section.contact-card a:visited {
+  padding: 1.1em 0 0 0;
+  font-size: 150%;
+  color: #E66A39;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+section.contact-card a:hover,
+section.contact-card a:active {
+  cursor: pointer;
+}
+/*=============ENDS=============*/
+
+/*
 =============FOOTER=============
 */
 footer.footer {
@@ -403,73 +524,6 @@ footer.footer {
 .footer a i.instagram:active {
   color: #cd486b;
   transition: color 0.3s;
-}
-/*=============ENDS=============*/
-
-/*
-================================================CONTACT US================================================
-*/
-
-/*
-=============CONTACT US HEADER AND NAVBAR/*=============
-*/
-.contact-header {
-  height: 100vh;
-  background:  -webkit-linear-gradient(rgba(40, 40, 48, 0.2), rgba(40, 40, 48, 0.4)), url("./img/contact-us-1600.jpg");
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-#navBar.contact ul li a:hover,
-#navBar.contact ul li a:active {
-  color: #D04E33;
-  cursor: pointer;
-}
-/*=============ENDS=============*/
-
-/*
-=============CONTACT CARD/*=============
-*/
-section.contact-card {
-  background: -webkit-linear-gradient(rgba(28, 32, 33, 0.5), rgba(28, 32, 33, 0.5));
-  margin: 2.25em 0;
-  width: 75%;
-  color: #EEE;
-  padding: 0 4.5em;
-}
-
-section.contact-card h1 {
-  margin: 0;
-  color: #EEE;
-  font-family: 'Black Ops One', cursive;
-  border-bottom: 2px solid #E66A39;
-  font-size: 275%;
-  font-weight: 400;
-}
-
-section.contact-card .address:link,
-section.contact-card .address:visited {
-  font-size: 1.25em;
-  padding: 1.5em 0 0 0;
-  color: #EEE;
-  letter-spacing: 0.1em;
-}
-
-section.contact-card a:link,
-section.contact-card a:visited {
-  padding: 1.1em 0 0 0;
-  font-size: 150%;
-  color: #E66A39;
-  letter-spacing: 0.2em;
-  font-weight: 600;
-}
-
-section.contact-card a:hover,
-section.contact-card a:active {
-  cursor: pointer;
 }
 /*=============ENDS=============*/
 
@@ -626,9 +680,9 @@ section.contact-card a:active {
   }
   .special-desc span.price {
     font-size: 1.5em;
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
-  .special-desc span.price::before { content: ""; }
+  .special-desc span.price::before { content: "..."; }
 
   /* Contact */
   section.contact-card { font-size: 0.8em; }
@@ -680,8 +734,8 @@ section.contact-card a:active {
   /* Restaurant Info */
   .restaurant-info {
     font-size: 0.4em;
-    text-align: center;
-    margin-top: 3em;
+    text-align: centerhow to set margins according to browser address bar;
+    margin-top: 2em;
   }
   div.restaurant-info img.logo {
     height: 11.75em;
@@ -704,11 +758,22 @@ section.contact-card a:active {
   .banner h1.first-item { margin-top: 5.2em; }
   .sub-menu-section { font-size: 0.9em; }
 
+  /* About Page */
+  section.about h1 {
+    font-size: 200%;
+    margin-top: 2em;
+  }
+
+  section.about p {
+   font-size: 1em;
+  }
+
   /* Contact */
   section.contact-card {
     font-size: 0.60em;
     padding: 0 3em;
   }
+
 }
 
 @media (max-width: 340px) {
