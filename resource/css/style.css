@@ -741,7 +741,10 @@ footer.footer {
     height: 11.75em;
     width: 11.75em;
   }
-  p.services { margin: 2em 11em; }
+  p.services {
+    margin: 2em 11em;
+    text-align: center;
+  }
 
   /* Special Menu */
   .special {
