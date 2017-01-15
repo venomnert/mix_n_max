@@ -104,7 +104,7 @@
                 <p>Chicken Skewer<span class="price">4</span></p>
                 <p>Jumbo Shrimp Skewer<span class="price">5</span></p>
                 <p>Grilled Salmon<span class="price">7</span></p>
-                <p>GAAA New York Steak 8oz<span class="price">9</span></p>
+                <p>AAA New York Steak 8oz<span class="price">9</span></p>
               </dialog>
             </h2>
             <div class="item first-item">
@@ -165,8 +165,14 @@
           <div class="sub-menu-section grid__col-sm-6">
             <h2>SOCIAL&hybull;SHARING</h2>
             <div class="item first-item">
-              <h6>Poutine<sup><a href="#extra_poutine">+</a></sup><span class="price">7</span></h6>
+              <h6>Poutine<sup><a class="show poutine">+</a></sup><span class="price">7</span></h6>
               <p>Hand-cut Yukon Gold Potato Fries. Served with Cheese Curds and Mix n Max Beef Gravy.</p>
+              <dialog class="extras poutine">
+                <h1>Toppings<a class="close poutine">X</a></h1>
+                  <p>Chicken<span class="price">3.95</span></p>
+                  <p>Ground Beef<span class="price">3.95</span></p>
+                  <p>Pulled Pork<span class="price">3.95</span></p>
+              </dialog>
             </div>
             <div class="item">
               <h6>Chicken Strips<span class="price">9</span></h6>
@@ -177,13 +183,37 @@
               <p>Mix n Max Special Cheese Blend, Mixed Vegetables, Onions. Served with Sour Cream and Salsa.</p>
             </div>
             <div class="item">
-              <h6>Jumbo Chicken Wings<sup><a href="#extra_wings">+</a></sup><span class="price">12</span></h6>
+              <h6>Jumbo Chicken Wings<sup><a class="show wings">+</a></sup><span class="price">12</span></h6>
               <p>Served with Hand-cut Yukon Fries, Carrots, Celery and Ranch Dip.</p>
+              <dialog class="extras wings">
+                <h1>Portions<a class="close wings">X</a></h1>
+                  <p>1Lbs<span class="price">9</span></p>
+                  <p>2Lbs<span class="price">17</span></p>
+                  <p>3Lbs<span class="price">24</span></p>
+                <h1 class="second-item">Flavours</h1>
+                  <p>BBQ, BBQ Hot, BBQ Medium</p>
+                  <p>Mild Blue Cheese</p>
+                  <p>Thai Sweet Chili</p>
+                  <p>Honey Garlic</p>
+                  <p>Jerk</p>
+                  <p>Dry Cajun</p>
+              </dialog>
             </div>
           </div>
 
           <div class="sub-menu-section grid__col-sm-6">
-            <h2>SANDWICHES<sup><a href="#extra_sandwich">+</a></sup></h2>
+            <h2>SANDWICHES<sup><a class="show sandwich">+</a></sup>
+              <dialog class="extras sandwich">
+                <h1>Extras<a class="close sandwich">X</a></h1>
+                  <p>All sandwiches are served with fries.</p>
+                <h1 class="second-item">Choice of Salad</h1>
+                  <p>Caesar Salad</p>
+                  <p>Garden Salad</p>
+                <h1 class="second-item">Choice of Bread</h1>
+                  <p>White Bread</p>
+                  <p>Brown Bread</p>
+              </dialog>
+            </h2>
             <div class="item first-item">
               <h6>Triple Decker Grilled Cheese<span class="price">8</span></h6>
               <p>Bacon and Cheese.</p>
@@ -212,7 +242,20 @@
 
         <div class="item-list grid">
           <div class="sub-menu-section grid__col-sm-6">
-            <h2>BURGER<sup><a href="#extra_burger">+</a></sup></h2>
+            <h2>BURGER<sup><a class="show burger">+</a></sup>
+              <dialog class="extras burger">
+                <h1>Extras<a class="close burger">X</a></h1>
+                  <p>All burger are served with fries.</p>
+                <h1 class="second-item">Choice of Salad on Bun</h1>
+                  <p>Caesar Salad</p>
+                  <p>Garden Salad</p>
+                <h1 class="second-item">Modification</h1>
+                  <p>Sweet Potatoes Fries<span class="price">1.95</span></p>
+                  <p>Gluten-Free Bread<span class="price">1.95</span></p>
+                  <p>Add Bacon<span class="price">2.95</span></p>
+                  <p>Add Cheese<span class="price">2.95</span></p>
+              </dialog>
+            </h2>
             <div class="item first-item">
               <h6>Beef Burger<span class="price">7</span></h6>
               <p>Home-made Beef Patty, Mixed Vegetables, Tomatoes, Pickles, Onions, Jalapeño. Served with Chipotle Aioli.</p>
@@ -236,7 +279,15 @@
           </div>
 
           <div class="sub-menu-section grid__col-sm-6">
-            <h2>WRAPS<sup><a href="#extra_wrap">+</a></sup></h2>
+            <h2>WRAPS<sup><a class="show wraps">+</a></sup>
+              <dialog class="extras wraps">
+                <h1>Extras<a class="close wraps">X</a></h1>
+                  <p>All wraps are served with fries.</p>
+                <h1 class="second-item">Choice of Salad</h1>
+                  <p>Caesar Salad</p>
+                  <p>Garden Salad</p>
+              </dialog>
+            </h2>
             <div class="item first-item">
               <h6>Roast &hybull; Veggi Wrap<span class="price">9</span></h6>
               <p>Peppers, Onions, Zucchinis, Eggplants, Sweet potatoes, Spinach, Avocado and Mayo.</p>
@@ -259,7 +310,13 @@
 
         <div class="item-list grid">
           <div class="sub-menu-section grid__col-sm-6">
-            <h2>THE MAIN<sup><a href="#extra_main">+</a></sup></h2>
+            <h2>THE MAIN<sup><a class="show main">+</a></sup>
+              <dialog class="extras main">
+                <h1>Choice of Side<a class="close main">X</a></h1>
+                  <p>Mashed Potatoes and Steamed Veggies</p>
+                  <p>Fries and Garend Salad</p>
+              </dialog>
+            </h2>
             <div class="item first-item">
               <h6>Shepherd Pie<span class="price">12</span></h6>
               <p>Ground beef, Peas, Carrots, Potatoes, Onions and Juice.</p>
@@ -311,7 +368,16 @@
 
         <div class="item-list grid">
           <div class="sub-menu-section grid__col-sm-6">
-            <h2>BREAKFAST<sup><a href="#extra_breakfast">+</a></sup></h2>
+            <h2>BREAKFAST<sup><a class="show breakfast">+</a></sup>
+              <dialog class="extras breakfast">
+                <h1>Extras<a class="close breakfast">X</a></h1>
+                <p>All breakfast are served with baked root vegetables and fresh fruits.</p>
+                <h1 class="second-item">Modification</h1>
+                  <p>White Bread, Brown or Rye Bread</p>
+                  <p>Gluten-Free Bread<span class="price">1.95</span></p>
+                  <p>Add Egg<span class="price">1.95</span></p>
+              </dialog>
+            </h2>
             <div class="item first-item">
               <h6>Pancake or French Toast<span class="price">7</span></h6>
               <p>Fresh Pancake or French Toast is Served with Maple Syrup.</p>
@@ -325,9 +391,19 @@
               <p>3 Eggs, Bell Peppers, Onions, Mushrooms, Asparagus, Tomatoes, Avocado stuffed with Goat Cheese and Croissant. Drizzled with Hollandaise Sauce.</p>
             </div>
             <div class="item">
-              <h6>Build Your Own Omelet<sup><a href="#extra_omelet">+</a></sup><span class="price">6</span></h6>
-              <p>Start Building Your Own Omelet.</p>
-            </div>
+              <h6>Build Your Own Omelet<sup><a class="show omelet">+</a></sup><span class="price">6</span>
+                <dialog class="extras omelet">
+                  <h1>Toppings<a class="close omelet">X</a></h1>
+                  <h2>Protein:</h2>
+                  <p>Bacon, Sausage, Peameal Bacon or Smoked Bacon<span class="price">2.95</span></p>
+                  <h2>Cheese:</h2>
+                  <p>Mixed Cheese or Goat Cheese<span class="price">2.95</span></p>
+                  <h2>Veggies:</h2>
+                  <p>Bell pepper, Diced Asparagus, Spinach, Onion, Mushroom, Tomato, Olive or Jalapeno<span class="price">0.95</span></p>
+                </dialog>
+              </h6>
+                <p>Start Building Your Own Omelet.</p>
+              </div>
             <div class="item">
               <h6>Big Breakfast<span class="price">12</span></h6>
               <p>2 Eggs, Pancakes, Peameal Bacon, Sausages and Grilled Tomatoes.</p>
@@ -340,7 +416,12 @@
               <p>2 Eggs, Juicy Strip Loin Steak 6oz and Blanched Asparagus. Served with Mix n Max Beef Gravy.</p>
             </div>
 
-            <h2 class="first-item">BENEDICT<sup><a href="#extra_benedict">+</a></sup></h2>
+            <h2 class="first-item">BENEDICT<sup><a class="show benedict">+</a></sup>
+              <dialog class="extras benedict">
+                <h1>Extras<a class="close benedict">X</a></h1>
+                <p>All benedict are served on english muffin, baked root vegetables and fresh fruit.</p>
+              </dialog>
+            </h2>
             <div class="item" >
               <h6>Mix N Max Benedict<span class="price">10</span></h6>
               <p>Shredded cheese, Paprika, Sausage and Peameal bacon.</p>
@@ -359,187 +440,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="extras grid grid--direction-column grid--align-center">
-        <div class="banner">
-          <h1 class="first-item">EXTRAS</h1>
-        </div>
-
-        <div class="item-list grid">
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_garlic_bread">GARLIC BREAD TOPPINGS</h2>
-            <div class="item first-item">
-              <h6>Jalapeño<span class="price">2.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Bacon<span class="price">2.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Cheese<span class="price">2.95</span></h6>
-            </div>
-          </div>
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 id="extra_salad">SALADS TOPPINGS</h2>
-            <div class="item first-item">
-              <h6>Chicken Skewer<span class="price">4</span></h6>
-            <div class="item">
-              <h6>Jumbo Shrimp Skewer<span class="price">5</span></h6>
-            </div>
-            <div class="item">
-              <h6>Grilled Salmon<span class="price">7</span></h6>
-            </div>
-            <div class="item">
-              <h6>AAA New York Steak 8oz<span class="price">9</span></h6>
-            </div>
-          </div>
-        </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 id="extra_soup">SOUP TOPPINGS</h2>
-            <div class="item first-item">
-              <h6>Chicken<span class="price">3.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Shrimp<span class="price">3.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Vegetables<span class="price">3.95</span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_poutine">POUTINE TOPPINGS</h2>
-            <div class="item first-item">
-              <h6>Chicken<span class="price">3.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Ground Beef<span class="price">3.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Pulled Pork<span class="price">3.95</span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_wings">JUMBO CHICKEN WINGS TOPPINGS</h2>
-            <div class="item first-item">
-              <h6>1Lbs<span class="price">9</span></h6>
-            </div>
-            <div class="item">
-              <h6>2Lbs<span class="price">17</span></h6>
-            </div>
-            <div class="item">
-              <h6>3Lbs<span class="price">24</span></h6>
-            </div>
-            <div class="item">
-              <h6>BBQ, BBQ Hot, BBQ Medium<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Mild Blue Cheese<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Thai Sweet Chili<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Honey Garlic<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Jerk<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Dry Cajun<span class="price"></span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_sandwich">SANDWICHES</h2>
-            <div class="item">
-              <h6>All sandwiches are served with fries and</h6>
-              <p>Your choice of salad</p>
-              <ul>
-                <li>Caesar Sald</li>
-                <li>Garden Sald</li>
-              </ul>
-              <p>Your choice of bread</p>
-              <ul>
-                <li>White Bread</li>
-                <li>Brown Bread</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_wrap">WRAPS</h2>
-            <div class="item first-item">
-              <h6>Served with Yukon Gold Fries with Caesar Salad or Garden Salad<span class="price"></span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_burger">BURGER</h2>
-            <div class="item first-item">
-              <h6>Served with Yukon Gold Fries with Caesar Salad or Garden Salad on a bun<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Substitue Yam for fries<span class="price">1.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Substitue Gluten-free bread<span class="price">1.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Bacon<span class="price">2.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Cheese<span class="price">2.95</span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_main">MAIN</h2>
-            <div class="item first-item">
-              <h6>Served with Mashed Potato<span class="price"></span></h6>
-            </div>
-            <div class="item first-item">
-              <h6>Served with Fries and Salad<span class="price"></span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_omelet">MAKE YOUR OWN OMELET</h2>
-            <div class="item first-item">
-              <h6>Bacon, Sausage, Peameal bacon, Smoked bacon<span class="price">2.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Mixed Cheese or Goat Cheese<span class="price">2.25</span></h6>
-            </div>
-            <div class="item">
-              <h6>Bell pepper, Diced Asparagus, Spinach, Onion, Mushroom, Tomato, Olive, Jalapeno<span class="price">0.95</span></h6>
-            </div>
-          </div>
-
-          <div class="sub-menu-section grid__col-sm-6">
-            <h2 class="first-item" id="extra_breakfast">BREAKFAST</h2>
-            <div class="item first-item">
-              <h6>Served with baked root vegetables, fresh garnished fruit<span class="price">2.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Choice of White or Brown Bread<span class="price"></span></h6>
-            </div>
-            <div class="item">
-              <h6>Substitue Gluten-free bread<span class="price">1.95</span></h6>
-            </div>
-            <div class="item">
-              <h6>Add extra egg<span class="price">1.95</span></h6>
-            </div>
-        </div>
-
-        <div class="sub-menu-section grid__col-sm-6">
-          <h2 class="first-item" id="extra_benedict">BENEDICT</h2>
-          <div class="item first-item">
-            <h6>Benedict served on english muffin. All benedicts are served with baked root vegetables, fresh garnished fruit<span class="price">2.95</span></h6>
-          </div>
-        </div>
-      </div>
       </section>
   </section>
 

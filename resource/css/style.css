@@ -356,15 +356,6 @@ h1.first-item {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-900.jpg");
   background-size: cover;
 }
-
-.extras .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/food-900.jpeg");
-  background-size: cover;
-}
-.extras .banner h1.first-item {
-  margin: 4em 0 0 0;
-}
-
 /* MENU ITEM */
 .sub-menu-section h2 {
   font-size: 135%;
@@ -373,6 +364,7 @@ h1.first-item {
   padding: 0 0 1em 0;
   color: #353C3E;
   border-bottom: 2px solid #d8d8d8;
+  position: relative;
 }
 
 .sub-menu-section a:hover, .item a:hover {
@@ -380,6 +372,7 @@ h1.first-item {
 }
 
 h2.first-item {
+  position: relative;
   margin-top: 2em;
 }
 
@@ -401,7 +394,7 @@ h6 sup a {
 }
 
 dialog {
-  font-size: 20px;
+  font-size: inherit;
   position: absolute;
   top: 2.25em;
   left: -1em;
@@ -416,7 +409,7 @@ h2 dialog {
   width: 360px;
 }
 dialog h1 {
-  font-size: 90%;
+  font-size: 0.75em;
   background-color: #353C3E;
   color: #EEE;
   margin: 0;
@@ -424,7 +417,22 @@ dialog h1 {
   border-top-right-radius: 0.25em;
   padding: 0.8em;
 }
-
+dialog.extras h2 {
+  font-size: 87%;
+  padding: 0.8em 0 0 0.8em;
+  border: 0;
+  font-weight: 600;
+  color: #353C3E;
+}
+dialog h1.second-item {
+  border-top-left-radius: 0em;
+  border-top-right-radius: 0em;
+  margin-top: 1em;
+  background-color: #E66A39;
+}
+dialog h1.second-item ~ h1 {
+  background-color: #353C3E;
+}
 dialog.extras h1 a.close {
   font-size: 0.9em;
   margin: -1.6em -1.3em 0 0;
@@ -432,7 +440,6 @@ dialog.extras h1 a.close {
   float: right;
   color: #D04E33;
 }
-
 dialog.extras p {
   margin: 0.30em 0 0 0;
   padding: 0 0.75em;
@@ -441,7 +448,9 @@ dialog.extras p {
   font-style: italic;
   color: #D04E33;
   font-weight: 600;
-
+}
+h2 dialog.extras p {
+  font-size: 0.6em;
 }
 dialog.extras p .price {
   float: right;
@@ -451,11 +460,43 @@ dialog.extras .price::before {
   color: #353C3E;
   font-weight: 200;
 }
-
-dialog.soup {
-  top: 18.25em;
+dialog.garlic-bread {
+  left: -2em;
 }
-
+dialog.soup {
+  top: 1.25em;
+  left: -2em;
+}
+dialog.poutine, dialog.omelet,
+dialog.wings {
+  left: -2em;
+}
+dialog.wings {
+  width: 270px;
+}
+dialog.extras.wings p {
+  word-spacing: 0.2em;
+}
+dialog.salad, dialog.sandwich,
+dialog.burger, dialog.wraps,
+dialog.main, dialog.breakfast {
+  top: 1.25em;
+  left: -2em;
+}
+dialog.main p, dialog.breakfast p {
+  margin-top: 1em;
+}
+dialog.main p:nth-last-child(1),
+dialog.breakfast p:nth-last-child(1) {
+  margin-bottom: 1em;
+}
+dialog.benedict {
+  top: 1.35em;
+  left: -2em;
+}
+dialog.omelet {
+  width: 420px;
+}
 /* Dialog Ends */
 
 .item.first-item {
@@ -647,7 +688,6 @@ footer.footer {
   #navBar ul li { width: 25%; }
 }
 
-
 @media(max-width: 1600px) and (min-width: 992px){
 
   /* Special Menu */
@@ -712,7 +752,8 @@ footer.footer {
   .menu-section section { margin-top: 6em; }
   .sub-menu-section { width: 85%; }
   h2.first-item { margin-top: 4em; }
-  .social-sandwich .item-list .sub-menu-section:nth-last-child(1) h2 {
+  .social-sandwich .item-list .sub-menu-section:nth-last-child(1) h2,
+  .burger-wrap .item-list .sub-menu-section:nth-last-child(1) h2 {
     margin-top: 4em;
   }
   .item-list { justify-content: center; }
@@ -781,6 +822,29 @@ footer.footer {
   /* Restaurant Info */
   .restaurant-info { font-size: 0.5em; margin-top: 9em;}
 
+  /* Dialog */
+  dialog.salad, dialog.soup,
+  dialog.sandwich, dialog.burger,
+  dialog.wraps, dialog.main,
+  dialog.breakfast, dialog.benedict,
+  dialog.omelet {
+    top: 1.65em;
+    left: -3em;
+    width: 15em;
+    font-size: 0.8em;
+  }
+  dialog.benedict {
+    width: 14em;
+  }
+  dialog.benedict p{
+    line-height: 1.75em;
+    padding: 1em;
+  }
+  dialog.omelet {
+    top: 3em;
+    width: 19em;
+  }
+
   /* Contact */
   section.contact-card { font-size: 0.65em; }
 }
@@ -829,20 +893,15 @@ footer.footer {
   .sub-menu-section { font-size: 0.9em; }
 
   /* About Page */
-  section.about h1 {
-    font-size: 200%;
-  }
+  section.about h1 { font-size: 200%; }
 
-  section.about p {
-   font-size: 1em;
-  }
+  section.about p { font-size: 1em; }
 
   /* Contact */
   section.contact-card {
     font-size: 0.60em;
     padding: 0 3em;
   }
-
 }
 
 @media (max-width: 340px) {
@@ -854,9 +913,43 @@ footer.footer {
   /* Restaurant Info */
   .restaurant-info { font-size: 0.35em; }
 
+  /* Dialog */
+  dialog.salad, dialog.soup,
+  dialog.burger {
+    left: -3.3em;
+    width: 13em;
+    font-size: 0.9em;
+  }
+  dialog.soup, dialog.wings,
+  dialog.sandwich, dialog.wraps,
+  dialog.main, dialog.breakfast,
+  dialog.benedict {
+    left: -3em;
+    width: 12em;
+  }
+
   /* Contact */
   section.contact-card {
     font-size: 0.57em;
     padding: 0 2.5em;
+  }
+}
+
+@media (max-width: 332px) {
+  h6 sup {
+    top: 0;
+  }
+  dialog.omelet {
+    top: 4.75em;
+    width: 19em;
+  }
+}
+
+@media (max-width: 325px) {
+  h6 sup {
+    top: 0;
+  }
+  dialog.wings {
+    top: 3.25em;
   }
 }
