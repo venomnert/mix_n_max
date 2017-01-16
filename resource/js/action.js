@@ -56,14 +56,55 @@ function assignDialogClose(dialog_array, close_array) {
   }
 }
 
+// function setHeight() {
+//    var windowHeight = $(window).height(),
+//        $block = $('.video-content');
+//     if(windowHeight > 550) { // 550px is your css min-height for this block
+//         $block.css({'min-height': windowHeight + 'px'})
+//     } else {
+//        $block.css({'min-height': ''})
+//     }
+// }
+//
+// $(document).ready(function() {
+//     setHeight();
+//    $(window).on('resize orientationchange', setHeight);
+// });
+
+function setHeight() {
+  var windowHeight = document.documentElement.clientHeight;
+  var home_header = document.querySelector('.home-header');
+  if (windowHeight > 500) {
+      home_header.style.height = windowHeight + 'px';
+      home_header.style.minHeight = windowHeight + 'px';
+      home_header.style.maxHeight = windowHeight + 'px';
+  }
+  else {
+    home_header.style.minHeight = '';
+    home_header.style.maxHeight = '';
+  }
+}
+
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+    setHeight();
+    alert('Working');
+    // Listen for orientation changes
+    window.addEventListener("orientationchange", function() {
+      // Announce the new orientation number
+      setHeight();
+      alert(screen.orientation);
+    }, false);
+  }
+}
 
 converNodeList(dialog_nodes, dialog_array);
 converNodeList(plus_nodes, plus_array);
 converNodeList(close_nodes, close_array);
 
-console.log(dialog_array);
-console.log(plus_array);
-console.log(close_array);
+// console.log(dialog_array);
+// console.log(plus_array);
+// console.log(close_array);
 
 assignDialogShow(dialog_array,plus_array);
 assignDialogClose(dialog_array,close_array);
