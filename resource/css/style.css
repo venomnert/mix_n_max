@@ -51,9 +51,9 @@ h3 {
 /*
 =============Header=============
 */
-header {
+header.home-header {
   height: 100vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/egg_toast_m.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-4128.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -312,7 +312,7 @@ header.menu-header {
   font-size: 190%;
   font-weight: 200;
   color: #EEEEEE;
-}7em
+}
 h1.first-item {
   margin: 2.2em 0 0 0;
 }
@@ -324,22 +324,18 @@ h1.first-item {
 .starters .banner h1.first-item {
   margin: 4em 0 0 0;
 }
-
 .salad-soups .banner {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/salad-900.jpg");
   background-size: cover;
 }
-
 .social-sandwich .banner {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/sandwich-900.jpeg");
   background-size: cover;
 }
-
 .burger-wrap .banner {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/burger-900.jpeg");
   background-size: cover;
 }
-
 .main-dish .banner {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/main-915.jpg");
   background-size: cover;
@@ -347,11 +343,11 @@ h1.first-item {
 .main-dish .banner h1.first-item {
   margin: 4em 0 0 0;
 }
-
 .breakfast-benedict .banner {
   background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-900.jpg");
   background-size: cover;
 }
+
 /* MENU ITEM */
 .sub-menu-section h2 {
   font-size: 135%;
@@ -389,7 +385,7 @@ h6 sup a {
   color: #E67E22;
 }
 
-dialog {
+div.extras {
   font-size: inherit;
   position: absolute;
   top: 2.25em;
@@ -399,12 +395,14 @@ dialog {
   width: 230px;
   padding: 0;
   z-index: 100;
+  display: none;
+  background: #E66A39;
 }
 
-h2 dialog {
+h2 div.extras {
   width: 360px;
 }
-dialog h1 {
+div.extras h1 {
   font-size: 0.75em;
   background-color: #353C3E;
   color: #EEE;
@@ -413,84 +411,83 @@ dialog h1 {
   border-top-right-radius: 0.25em;
   padding: 0.8em;
 }
-dialog.extras h2 {
+div.extras h2 {
   font-size: 87%;
   padding: 0.8em 0 0 0.8em;
   border: 0;
   font-weight: 600;
   color: #353C3E;
 }
-dialog h1.second-item {
+div.extras h1.second-item {
   border-top-left-radius: 0em;
   border-top-right-radius: 0em;
   margin-top: 1em;
-  background-color: #E66A39;
 }
-dialog h1.second-item ~ h1 {
+div.extras h1.second-item ~ h1 {
   background-color: #353C3E;
 }
-dialog.extras h1 a.close {
+div.extras h1 a.close {
   font-size: 0.9em;
   margin: -1.6em -1.3em 0 0;
   padding: 1em;
   float: right;
   color: #D04E33;
 }
-dialog.extras p {
+div.extras p {
   margin: 0.30em 0 0 0;
   padding: 0 0.75em;
   font-size: 0.8em;
   line-height: 1.75em;
   font-style: italic;
-  color: #D04E33;
+  color: #EEE;
   font-weight: 600;
 }
-h2 dialog.extras p {
+h2 div.extras p {
   font-size: 0.6em;
 }
-dialog.extras p .price {
+div.extras p .price {
   float: right;
 }
-dialog.extras .price::before {
+div.extras .price::before {
   content: " ......";
   color: #353C3E;
   font-weight: 200;
 }
-dialog.garlic-bread {
+div.garlic-bread {
   left: -2em;
 }
-dialog.soup {
+div.soup {
   top: 1.25em;
   left: -2em;
 }
-dialog.poutine, dialog.omelet,
-dialog.wings {
+div.poutine, div.omelet,
+div.wings {
   left: -2em;
 }
-dialog.wings {
+div.wings {
   width: 270px;
 }
-dialog.extras.wings p {
+div.extras.wings p {
   word-spacing: 0.2em;
 }
-dialog.salad, dialog.sandwich,
-dialog.burger, dialog.wraps,
-dialog.main, dialog.breakfast {
+div.salad, div.sandwich,
+div.burger, div.wraps,
+div.main, div.breakfast {
   top: 1.25em;
   left: -2em;
 }
-dialog.main p, dialog.breakfast p {
+div.main p, div.breakfast p {
   margin-top: 1em;
 }
-dialog.main p:nth-last-child(1),
-dialog.breakfast p:nth-last-child(1) {
+div.main p:nth-last-child(1),
+div.breakfast p:nth-last-child(1) {
   margin-bottom: 1em;
 }
-dialog.benedict {
+div.benedict {
   top: 1.35em;
   left: -2em;
 }
-dialog.omelet {
+div.omelet {
   width: 420px;
 }
 /* Dialog Ends */
@@ -704,6 +701,15 @@ footer.footer {
 }
 
 @media (max-width: 1085px) and (min-width: 1016px){
+  /* Home Page */
+  header.home-header {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-1280.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   /* Special Menu */
   .specials-list { align-items: stretch; }
   .special-desc span.price::before {
@@ -729,6 +735,8 @@ footer.footer {
 }
 
 @media (max-width: 992px) {
+  /* Home Page */
+
   /* Special Menu */
   .special { padding: 2em; }
   .special-desc span.price::before {
@@ -764,7 +772,15 @@ footer.footer {
 }
 
 @media (max-width: 765px) {
-
+  /* Home Page */
+  header.home-header {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-908.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   /* NavBar */
   #navBar { font-size: 1.1em; }
 
@@ -822,29 +838,29 @@ footer.footer {
   .restaurant-info { font-size: 0.4em; margin-top: 7em;}
 
   /* Dialog */
-  dialog.salad, dialog.soup,
-  dialog.sandwich, dialog.burger,
-  dialog.wraps, dialog.main,
-  dialog.breakfast, dialog.benedict,
-  dialog.omelet {
+  div.salad, div.soup,
+  div.sandwich, div.burger,
+  div.wraps, div.main,
+  div.breakfast, div.benedict,
+  div.omelet {
     top: 1.65em;
     left: -3em;
     width: 15em;
     font-size: 0.8em;
   }
-  dialog.benedict {
+  div.benedict {
     width: 14em;
   }
-  dialog.benedict p{
+  div.benedict p{
     line-height: 1.75em;
     padding: 1em;
   }
-  dialog.omelet {
+  div.omelet {
     top: 3em;
     width: 19em;
   }
 
-  /* Contact */0.35
+  /* Contact */
   section.contact-card { font-size: 0.65em; }
 
   section.about h1 {
@@ -853,6 +869,15 @@ footer.footer {
 }
 
 @media (max-width: 500px) {
+  /* Home Page */
+  header.home-header {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-496.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   /* Contact Us */
   section.contact-card { padding: 0 4em; }
 }
@@ -909,16 +934,16 @@ footer.footer {
   .restaurant-info { margin-top: 10em; font-size: 0.35em; }
 
   /* Dialog */
-  dialog.salad, dialog.soup,
-  dialog.burger {
+  div.salad, div.soup,
+  div.burger {
     left: -3.3em;
     width: 13em;
     font-size: 0.9em;
   }
-  dialog.soup, dialog.wings,
-  dialog.sandwich, dialog.wraps,
-  dialog.main, dialog.breakfast,
-  dialog.benedict {
+  div.soup, div.wings,
+  div.sandwich, div.wraps,
+  div.main, div.breakfast,
+  div.benedict {
     left: -3em;
     width: 12em;
   }
@@ -934,7 +959,7 @@ footer.footer {
   h6 sup {
     top: 0;
   }
-  dialog.omelet {
+  div.omelet {
     top: 4.75em;
     width: 19em;
   }
@@ -944,7 +969,7 @@ footer.footer {
   h6 sup {
     top: 0;
   }
-  dialog.wings {
+  div.wings {
     top: 3.25em;
   }
 }
