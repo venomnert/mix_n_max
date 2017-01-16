@@ -81,6 +81,7 @@ function setHeight() {
   var windowHeight = document.documentElement.clientHeight;
   var home_header = document.querySelector('.home-header');
   var contact_header = document.querySelector('.contact-header');
+  var menu_header = document.querySelector('.menu-header');
 
   if (windowHeight > 500) {
     if (home_header) {
@@ -88,10 +89,9 @@ function setHeight() {
     }
     else if (contact_header) {
       setHeights(contact_header, windowHeight, 'px');
-        console.log('changed contact');
     }
-    else {
-
+    else if (menu_header){
+      setHeights(menu_header, menu_header.offsetHeight , 'px');
     }
   }
   else {
