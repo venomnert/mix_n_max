@@ -82,6 +82,7 @@ function setHeight() {
   var home_header = document.querySelector('.home-header');
   var contact_header = document.querySelector('.contact-header');
   var menu_header = document.querySelector('.menu-header');
+  var about_header = document.querySelector('.about-header');
 
   if (windowHeight > 500) {
     if (home_header) {
@@ -92,6 +93,12 @@ function setHeight() {
     }
     else if (menu_header){
       setHeights(menu_header, menu_header.offsetHeight , 'px');
+    }
+    else if (about_header) {
+      setHeights(about_header, about_header.offsetHeight , 'px');
+    }
+    else {
+      console.log('No pages read.');
     }
   }
   else {
