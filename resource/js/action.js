@@ -23,7 +23,7 @@ function converNodeList(nodeList, arrayList) {
 
 function assignDialogShow(dialog_array, plus_array) {
   if (dialog_array.length !== plus_array.length) {
-    console.log('Unequal dialog for plus');
+    // console.log('Unequal dialog for plus');
     return;
   }
 
@@ -40,7 +40,7 @@ function assignDialogShow(dialog_array, plus_array) {
 
 function assignDialogClose(dialog_array, close_array) {
   if (dialog_array.length !== close_array.length) {
-    console.log('Unequal dialog for close');
+    // console.log('Unequal dialog for close');
     return;
   }
 
@@ -49,7 +49,7 @@ function assignDialogClose(dialog_array, close_array) {
 
     for (let j = 0; j < dialog_array.length; j++) {
       if (dialog_array[j].classList.contains(className)) {
-        console.log(className, dialog_array[j]);
+        // console.log(className, dialog_array[j]);
         close_array[i].onclick = function () { dialog_array[j].close(); }
       }
     }
@@ -87,10 +87,11 @@ function setHeight() {
       setHeights(home_header, windowHeight, 'px');
     }
     else if (contact_header) {
-      setHeights(home_header, windowHeight, 'px');
+      setHeights(contact_header, windowHeight, 'px');
+        console.log('changed contact');
     }
     else {
-      alert('no pages');
+
     }
   }
   else {
@@ -102,7 +103,7 @@ function setHeight() {
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     setHeight();
-    alert('Working');
+    console.log('called setHeight');
     // Listen for orientation changes
     window.addEventListener("orientationchange", function() {
       // Announce the new orientation number
