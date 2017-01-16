@@ -73,18 +73,25 @@ function assignDialogClose(dialog_array, close_array) {
 
 function setHeights(element, heightValue, unit) {
   element.style.height = heightValue + unit;
-  element.style.minHeight = heightValue;
-  element.style.maxHeight = heightValue;
+  element.style.minHeight = heightValue + unit;
+  element.style.maxHeight = heightValue + unit;
 }
 
 function setHeight() {
   var windowHeight = document.documentElement.clientHeight;
   var home_header = document.querySelector('.home-header');
-  var contact_header = document.querySelector('contact-header');
+  var contact_header = document.querySelector('.contact-header');
 
   if (windowHeight > 500) {
+    if (home_header) {
       setHeights(home_header, windowHeight, 'px');
-      setHeights(contact_header, windowHeight, 'px');      
+    }
+    else if (contact_header) {
+      setHeights(home_header, windowHeight, 'px');
+    }
+    else {
+      alert('no pages');
+    }
   }
   else {
     home_header.style.minHeight = '';
