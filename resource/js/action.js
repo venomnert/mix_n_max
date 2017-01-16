@@ -115,7 +115,7 @@ document.onreadystatechange = function () {
     window.addEventListener("orientationchange", function() {
       // Announce the new orientation number
       setHeight();
-      alert(screen.orientation);
+      // alert(screen.orientation);
     }, false);
   }
 }

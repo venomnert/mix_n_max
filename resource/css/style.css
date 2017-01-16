@@ -79,24 +79,20 @@ header {
   height: 90px;
   flex: 0 1 auto;
 }
-
 #navBar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 #navBar ul li {
   padding: 1em 0;
 }
-
 #navBar ul li a:link,
 #navBar ul li a:visited {
   color: #EEE;
   font-weight: 400;
   transition: color 0.3s;
 }
-
 #navBar ul li a:hover,
 #navBar ul li a:active {
   color: #E67E22;
@@ -121,7 +117,7 @@ div.restaurant-info img.logo {
 }
 
 .restaurant-info h1 {
-  font-size: 575%;
+  font-size: 5em;
   font-family: 'Black Ops One', cursive;
   font-weight: 400;
   margin: -0.4em 0 0 0.49em;
@@ -140,7 +136,7 @@ p.services {
 .storeSpecials {
   font-size: 20px;
   background-color: #EEEEEE;
-  padding-bottom: 10%;
+  padding: 10% 0;
 }
 
 .storeSpecials h3 {
@@ -233,6 +229,7 @@ section.about {
 }
 
 section.about h1 {
+  font-size: 2.5em;
   margin: 1.5em 0 0 0;
   padding: 0 0 0.2em 0;
   border-bottom: 2px solid #1C2021;
@@ -315,7 +312,7 @@ header.menu-header {
   font-size: 190%;
   font-weight: 200;
   color: #EEEEEE;
-}
+}7em
 h1.first-item {
   margin: 2.2em 0 0 0;
 }
@@ -707,20 +704,23 @@ footer.footer {
 }
 
 @media (max-width: 1085px) and (min-width: 1016px){
-    /* Special Menu */
+  /* Special Menu */
+  .specials-list { align-items: stretch; }
   .special-desc span.price::before {
-    content: " ..................................";
+    content: " ...........................";
   }
   .special-container img.special-food {
     height: 125px;
     width: 125px;
   }
+
 }
 
 @media (max-width: 1015px) {
   /* Special Menu */
+  .specials-list { align-items: stretch; }
   .special-desc span.price::before {
-    content: " .............................";
+    content: " ........................";
   }
   .special-container img.special-food {
     height: 120px;
@@ -819,7 +819,7 @@ footer.footer {
     border-bottom: 1px solid #D04E33;
   }
   /* Restaurant Info */
-  .restaurant-info { font-size: 0.5em; margin-top: 9em;}
+  .restaurant-info { font-size: 0.4em; margin-top: 7em;}
 
   /* Dialog */
   dialog.salad, dialog.soup,
@@ -844,14 +844,15 @@ footer.footer {
     width: 19em;
   }
 
-  /* Contact */
+  /* Contact */0.35
   section.contact-card { font-size: 0.65em; }
+
+  section.about h1 {
+    margin: 1.25em 0 0 0;
+  }
 }
 
 @media (max-width: 500px) {
-  /* Restaurant Info */
-  .restaurant-info { font-size: 0.45em; margin-top: 8em;}
-
   /* Contact Us */
   section.contact-card { padding: 0 4em; }
 }
@@ -862,17 +863,12 @@ footer.footer {
   #navBar ul li { padding: 0.8em 0; }
 
   /* Restaurant Info */
-  .restaurant-info {
-    font-size: 0.4em;
-    text-align: centerhow to set margins according to browser address bar;
-    margin-top: 2em;
-  }
   div.restaurant-info img.logo {
     height: 11.75em;
     width: 11.75em;
   }
   p.services {
-    margin: 2em 11em;
+    margin: 1em 11em 0 11em;
     text-align: center;
   }
 
@@ -892,7 +888,7 @@ footer.footer {
   .sub-menu-section { font-size: 0.9em; }
 
   /* About Page */
-  section.about h1 { font-size: 200%; }
+  section.about h1 { font-size: 2em; }
 
   section.about p { font-size: 1em; }
 
@@ -910,7 +906,7 @@ footer.footer {
   }
 
   /* Restaurant Info */
-  .restaurant-info { font-size: 0.35em; }
+  .restaurant-info { margin-top: 10em; font-size: 0.35em; }
 
   /* Dialog */
   dialog.salad, dialog.soup,
