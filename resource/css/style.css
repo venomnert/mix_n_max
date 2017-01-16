@@ -53,7 +53,7 @@ h3 {
 */
 header.home-header {
   height: 100vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-4128.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-4128.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -257,14 +257,14 @@ body.menu-body {
 }
 
 header.menu-header {
-  height: 60vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-header-1280.jpeg");
+  height: 40vh;
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-1600.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100% 90%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 -25px;
+  background-position: 0 -270px;
 }
 
 #navBar.menu {
@@ -318,33 +318,35 @@ h1.first-item {
 }
 
 .starters .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/fries-900.jpeg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/fries-900.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .starters .banner h1.first-item {
   margin: 4em 0 0 0;
 }
 .salad-soups .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/salad-900.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/salad-2-900.jpg");
   background-size: cover;
 }
 .social-sandwich .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/sandwich-900.jpeg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/sandwich-900.jpeg");
   background-size: cover;
 }
 .burger-wrap .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/burger-900.jpeg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/burger-900.jpeg");
   background-size: cover;
 }
 .main-dish .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/main-915.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/main-900.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-dish .banner h1.first-item {
   margin: 4em 0 0 0;
 }
 .breakfast-benedict .banner {
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/breakfast-900.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/breakfast-900.jpg");
   background-size: cover;
 }
 
@@ -640,6 +642,8 @@ footer.footer {
   .special-desc { width: 76%; }
 
   /* Menu */
+  header.menu-header { height: 50vh; }
+
   .menu-description { justify-content: center; }
   .menu-description article { width: 34.666667%; }
   .menu-description article:nth-child(1) {
@@ -650,6 +654,36 @@ footer.footer {
   .item-list { justify-content: center; }
   .item-list .sub-menu-section:nth-child(1) { margin-right: 1em; }
   .sub-menu-section { width: 40%; }
+
+  /* Menu Banners */
+  .starters .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/fries-1280.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -400px;
+  }
+  .salad-soups .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/salad-900.jpg");
+    background-size: cover;
+  }
+  .main-dish .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/main-915.jpg");
+    background-size: cover;
+    background-position: 0 -215px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .burger-wrap .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/burger-900.jpeg");
+    background-size: cover;
+    background-position: 0 -96px;
+  }
+}
+
+@media (max-width: 1630px) {
+    /* Menu */
+    header.menu-header { height: 40vh; }
 }
 
 @media (max-width: 1570px) {
@@ -658,6 +692,12 @@ footer.footer {
   /* Menu */
   .menu-description article { width: 39.666667%; }
   .menu-description { justify-content: center; }
+
+  /* Menu Banners */
+  .starters .banner {
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+  }
 }
 
 @media (max-width: 1410px) {
@@ -665,11 +705,21 @@ footer.footer {
   #navBar ul li { width: 10.333333%; }
   /* Menu */
   .sub-menu-section { width: 48%; }
+  /* Menu Banner */
+  .main-dish .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/main-900.jpg");
+    background-size: cover;
+    background-position: 0 -135px;
+  }
 }
 
 @media (max-width: 1275px) {
   /* NavBar */
   #navBar ul li { width: 11.333333%; }
+  /* Menu Banners */
+  .starters .banner {
+    background-position: 0 -215px;
+  }
 }
 
 @media (max-width: 1165px) {
@@ -679,6 +729,12 @@ footer.footer {
     justify-content: center;
   }
   #navBar ul li { width: 25%; }
+  /* Menu Banner */
+  .main-dish .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/main-900.jpg");
+    background-size: cover;
+    background-position: 0 0;
+  }
 }
 
 @media(max-width: 1600px) and (min-width: 992px){
@@ -703,7 +759,7 @@ footer.footer {
 @media (max-width: 1085px) and (min-width: 1016px){
   /* Home Page */
   header.home-header {
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-1280.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-1280.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -735,14 +791,18 @@ footer.footer {
 }
 
 @media (max-width: 992px) {
-  /* Home Page */
-
   /* Special Menu */
   .special { padding: 2em; }
   .special-desc span.price::before {
     content: " .......................................................";
   }
   .special-desc { width: 75%; }
+  /* Menu Banners */
+  .starters .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/fries-900.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 840px) {
@@ -751,8 +811,19 @@ footer.footer {
     content: " .........................................";
   }
   /* Menu */
+  header.menu-header {
+    height: 40vh;
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-1600.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -140px;
+  }
+
   .menu-description article { width: 99.666667%; }
-  .menu-description article:nth-last-child(1) {
+  .menu-description article {
     padding-top: 3em;
     padding-left: 1.5em;
   }
@@ -769,12 +840,18 @@ footer.footer {
   .item.alignment {
     margin-top: 0.9em;
   }
+  /* Menu Banners */
+  .starters .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/fries-515.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 765px) {
   /* Home Page */
   header.home-header {
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-908.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-908.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -816,11 +893,30 @@ footer.footer {
   #navBar { font-size: 1em; }
   /* Restaurant Info */
   .restaurant-info { font-size: 0.6em; }
+
+  /*About Header */
+  header.about-header {
+    height: 70vh;
+    background: url("./img/about-filter-960.jpg");
+    background-position: 0 -50px;
+  }
+
+  /* Menu Banner */
+  .breakfast-benedict .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/breakfast-900.jpg");
+    background-size: cover;
+    background-position: -200px 0;
+  }
+
 }
 
 @media (max-width: 570px) {
   /* Special Menu */
   .storeSpecials h3 { font-size: 100%; }
+  /*About Header */
+  header.about-header {
+    background-position: -50px -50px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -862,16 +958,13 @@ footer.footer {
 
   /* Contact */
   section.contact-card { font-size: 0.65em; }
-
-  section.about h1 {
-    margin: 1.25em 0 0 0;
-  }
+  section.about h1 { margin: 1.25em 0 0 0; }
 }
 
 @media (max-width: 500px) {
   /* Home Page */
   header.home-header {
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.3), rgba(40, 40, 48, 0.3)), url("./img/about-header-496.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-496.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -905,12 +998,29 @@ footer.footer {
   .storeSpecials h3 { font-size: 85%; }
 
   /* Menu */
+  header.menu-header {
+    height: 40vh;
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-400.jpg");
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -140px;
+  }
   .banner h1 { font-size: 140%; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
     margin-top: 6em;
   }
   .banner h1.first-item { margin-top: 5.2em; }
   .sub-menu-section { font-size: 0.9em; }
+
+  /* Menu Banners */
+  .starters .banner {
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/fries-386.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
   /* About Page */
   section.about h1 { font-size: 2em; }
