@@ -212,7 +212,7 @@ p.services {
 /*
 ================================================ABOUT================================================
 */
-.about-header {
+header.about-header {
   height: 60vh;
   background: url("./img/about-filter-1200.jpg");
   -moz-background-size: cover;
@@ -220,7 +220,7 @@ p.services {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 -205px;
+  background-position: 0 -100px;
 }
 
 #navBar.about ul li a:hover,
