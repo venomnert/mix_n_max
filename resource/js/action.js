@@ -11,7 +11,7 @@ document.querySelector('#show').onclick = function () {
   dialog.show();
 }
 document.querySelector('#close').onclick = function () {
-  dialog.close();
+  dialog.close();    alert('Working')
 }
 */
 
@@ -71,13 +71,20 @@ function assignDialogClose(dialog_array, close_array) {
 //    $(window).on('resize orientationchange', setHeight);
 // });
 
+function setHeights(element, heightValue, unit) {
+  element.style.height = heightValue + unit;
+  element.style.minHeight = heightValue;
+  element.style.maxHeight = heightValue;
+}
+
 function setHeight() {
   var windowHeight = document.documentElement.clientHeight;
   var home_header = document.querySelector('.home-header');
+  var contact_header = document.querySelector('contact-header');
+
   if (windowHeight > 500) {
-      home_header.style.height = windowHeight + 'px';
-      home_header.style.minHeight = windowHeight + 'px';
-      home_header.style.maxHeight = windowHeight + 'px';
+      setHeights(home_header, windowHeight, 'px');
+      setHeights(contact_header, windowHeight, 'px');      
   }
   else {
     home_header.style.minHeight = '';
