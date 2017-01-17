@@ -999,7 +999,7 @@ a.backToTop {
 @media (max-width: 500px) {
   /* Home Page */
   header.home-header {
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-496.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/home-header-908.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
