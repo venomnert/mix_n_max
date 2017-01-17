@@ -262,7 +262,7 @@ body.menu-body {
 
 header.menu-header {
   height: 40vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-1600.jpg");
+  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-1600.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -841,10 +841,11 @@ a.backToTop {
   /* Menu */
   header.menu-header {
     height: 40vh;
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-1600.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-1600.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: 0 -140px;
   }
@@ -1025,10 +1026,11 @@ a.backToTop {
   /* Menu */
   header.menu-header {
     height: 40vh;
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.6)), url("./img/menu-2-400.jpg");
+    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-400.jpg");
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: 0 -140px;
   }
