@@ -1040,7 +1040,7 @@ a.backToTop {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: 0 -70px;
+    background-position: 0 -65px;
   }
   .banner h1 { font-size: 1.5em; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
