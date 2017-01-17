@@ -458,41 +458,41 @@ div.extras .price::before {
   color: #353C3E;
   font-weight: 200;
 }
-div.garlic-bread {
+div.extras.garlic-bread {
   left: -2em;
 }
-div.soup {
+div.extras.soup {
   top: 1.25em;
   left: -2em;
 }
-div.poutine, div.omelet,
-div.wings {
+div.extras.poutine, div.extras.omelet,
+div.extras.wings {
   left: -2em;
 }
-div.wings {
+div.extras.wings {
   width: 270px;
 }
 div.extras.wings p {
   word-spacing: 0.2em;
 }
-div.salad, div.sandwich,
-div.burger, div.wraps,
-div.main, div.breakfast {
+div.extras.salad, div.extras.sandwich,
+div.extras.burger, div.extras.wraps,
+div.extras.main, div.extras.breakfast {
   top: 1.25em;
   left: -2em;
 }
-div.main p, div.breakfast p {
+div.extras.main p, div.extras.breakfast p {
   margin-top: 1em;
 }
-div.main p:nth-last-child(1),
-div.breakfast p:nth-last-child(1) {
+div.extras.main p:nth-last-child(1),
+div.extras.breakfast p:nth-last-child(1) {
   margin-bottom: 1em;
 }
-div.benedict {
+div.extras.benedict {
   top: 1.35em;
   left: -2em;
 }
-div.omelet {
+div.extras.omelet {
   width: 420px;
 }
 /* Dialog Ends */
@@ -961,24 +961,24 @@ a.backToTop {
   .restaurant-info { font-size: 0.4em; margin-top: 7em;}
 
   /* Dialog */
-  div.salad, div.soup,
-  div.sandwich, div.burger,
-  div.wraps, div.main,
-  div.breakfast, div.benedict,
-  div.omelet {
+  div.extras.salad, div.extras.soup,
+  div.extras.sandwich, div.extras.burger,
+  div.extras.wraps, div.extras.main,
+  div.extras.breakfast, div.extras.benedict,
+  div.extras.omelet {
     top: 1.65em;
     left: -3em;
     width: 15em;
     font-size: 0.8em;
   }
-  div.benedict {
+  div.extras.benedict {
     width: 14em;
   }
-  div.benedict p{
+  div.extras.benedict p{
     line-height: 1.75em;
     padding: 1em;
   }
-  div.omelet {
+  div.extras.omelet {
     top: 3em;
     width: 19em;
   }
@@ -1001,7 +1001,6 @@ a.backToTop {
   /* Contact Us */
   section.contact-card { padding: 0 4em; }
 }
-
 @media (max-width: 405px) {
   /* NavBar */
   #navBar { height: 135px; }
@@ -1035,7 +1034,7 @@ a.backToTop {
     background-attachment: fixed;
     background-position: 0 -140px;
   }
-  .banner h1 { font-size: 140%; }
+  .banner h1 { font-size: 1.5em; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
     margin-top: 6em;
   }
@@ -1071,16 +1070,16 @@ a.backToTop {
   .restaurant-info { margin-top: 10em; font-size: 0.35em; }
 
   /* Dialog */
-  div.salad, div.soup,
-  div.burger {
+  div.extras.salad, div.extras.soup,
+  div.extras.burger {
     left: -3.3em;
     width: 13em;
     font-size: 0.9em;
   }
-  div.soup, div.wings,
-  div.sandwich, div.wraps,
-  div.main, div.breakfast,
-  div.benedict {
+  div.extras.soup, div.extras.wings,
+  div.extras.sandwich, div.extras.wraps,
+  div.extras.main, div.extras.breakfast,
+  div.extras.benedict {
     left: -3em;
     width: 12em;
   }
@@ -1096,7 +1095,7 @@ a.backToTop {
   h6 sup {
     top: 0;
   }
-  div.omelet {
+  div.extras.omelet {
     top: 4.75em;
     width: 19em;
   }
@@ -1106,7 +1105,7 @@ a.backToTop {
   h6 sup {
     top: 0;
   }
-  div.wings {
+  div.extras.wings {
     top: 3.25em;
   }
 }
