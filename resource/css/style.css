@@ -122,6 +122,14 @@ div.restaurant-info img.logo {
   font-weight: 400;
   margin: -0.4em 0 0 0.49em;
 }
+.restaurant-info h2 {
+  font-size: 3em;
+  font-family: 'Black Ops One', cursive;
+  font-weight: 400;
+  margin: 0;
+  color: #EEEEEE;
+  text-shadow: -1px 0 #E66A39, 0 1px #E66A39, 1px 0 #E66A39, 0 -1px #E66A39;
+}
 
 p.services {
   font-size: 2em;
