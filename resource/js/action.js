@@ -112,7 +112,7 @@ function setHeight() {
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     setHeight();
-    console.log('called setHeight');
+    //console.log('called setHeight');
     // Listen for orientation changes
     window.addEventListener("orientationchange", function() {
       // Announce the new orientation number
