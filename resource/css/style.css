@@ -855,7 +855,7 @@ a.backToTop {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: 0 -140px;
+    background-position: 0 -55px;
   }
 
   .menu-description article { width: 99.666667%; }
@@ -1040,7 +1040,7 @@ a.backToTop {
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position: 0 -65px;
+    background-position: 0 -55px;
   }
   .banner h1 { font-size: 1.5em; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
