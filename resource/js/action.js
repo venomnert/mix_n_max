@@ -32,7 +32,8 @@ function assignDialogShow(dialog_array, plus_array) {
 
     for (let j = 0; j < dialog_array.length; j++) {
       if (dialog_array[j].classList.contains(className)) {
-        plus_array[i].onclick = function () { dialog_array[j].style.display = 'block'; }
+        plus_array[i].addEventListener('click', function () {
+          dialog_array[j].style.display = 'block'; }, false);
       }
     }
   }
@@ -50,7 +51,8 @@ function assignDialogClose(dialog_array, close_array) {
     for (let j = 0; j < dialog_array.length; j++) {
       if (dialog_array[j].classList.contains(className)) {
         // console.log(className, dialog_array[j]);
-        close_array[i].onclick = function () { dialog_array[j].style.display = 'none'; }
+        close_array[i].addEventListener('click', function () {
+          dialog_array[j].style.display = 'none'; }, false);
       }
     }
   }
