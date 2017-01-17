@@ -607,7 +607,7 @@ section.contact-card a:active {
 */
 footer.footer {
 /*  font-size: 20px; */
-  height: 9em;
+  height: 12em;
   background-color: #1C2021;
   border-top: 2px solid #D04E33;
 }
@@ -654,6 +654,10 @@ footer h6 {
 
 footer h6 a {
   word-spacing: 0.5em;
+}
+
+a.backToTop {
+  padding: 2em;
 }
 /*=============ENDS=============*/
 
