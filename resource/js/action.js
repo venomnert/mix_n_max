@@ -33,7 +33,9 @@ function assignDialogShow(dialog_array, plus_array) {
     for (let j = 0; j < dialog_array.length; j++) {
       if (dialog_array[j].classList.contains(className)) {
         plus_array[i].addEventListener('click', function () {
-          dialog_array[j].style.display = 'block'; }, false);
+          dialog_array[j].style.display = 'block';
+          console.log('clicked expand');
+        }, false);
       }
     }
   }
@@ -120,13 +122,6 @@ document.onreadystatechange = function () {
       // alert(screen.orientation);
     }, false);
   }
-}
-
-function loadImages() {
-    var header = document.querySelector('.home-header');
-    if(window.devicePixelRatio >= 2 && window.innerWidth < 400 {
-        header.style.background = '-webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url(images/home-header-1280.jpg)';
-    }
 }
 
 converNodeList(dialog_nodes, dialog_array);
