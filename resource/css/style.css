@@ -388,11 +388,13 @@ h2.first-item {
 
 /* Dialog */
 h2 sup a {
+  cursor: pointer;
   font-size: 2em;
   padding: 1em 1em 0.85em 0;
   color: #E67E22;
 }
 h6 sup a {
+  cursor: pointer;
   font-size: 2em;
   padding: 0.85em 1em 0.85em 0;
   color: #E67E22;

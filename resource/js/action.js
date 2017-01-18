@@ -134,4 +134,3 @@ converNodeList(close_nodes, close_array);
 
 assignDialogShow(dialog_array,plus_array);
 assignDialogClose(dialog_array,close_array);
-loadImages();
