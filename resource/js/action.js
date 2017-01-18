@@ -124,7 +124,7 @@ document.onreadystatechange = function () {
 
 function loadImages() {
     var header = document.querySelector('.home-header');
-    if(window.devicePixelRatio >= 2) {
+    if(window.devicePixelRatio >= 2 && window.innerWidth < 400 {
         header.style.background = '-webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url(images/home-header-1280.jpg)';
     }
 }
