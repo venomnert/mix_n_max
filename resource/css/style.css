@@ -270,13 +270,14 @@ body.menu-body {
 
 header.menu-header {
   height: 40vh;
-  background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-1600.jpg");
+  background-color: #1C2021;
+  /*background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-1600.jpg");
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 -270px;
+  background-position: 0 -270px;*/
 }
 
 #navBar.menu {
@@ -387,13 +388,13 @@ h2.first-item {
 }
 
 /* Dialog */
-h2 a sup {
+h2 sup a {
   cursor: pointer;
   font-size: 2em;
   padding: 1em 1em 0.85em 0;
   color: #E67E22;
 }
-h6 a sup {
+h6 sup a {
   cursor: pointer;
   font-size: 2em;
   padding: 0.85em 1em 0.85em 0;
@@ -682,9 +683,6 @@ a.backToTop {
   .special { border-right: 1px solid #e0e0e0; }
   .special-desc { width: 76%; }
 
-  /* Menu */
-  header.menu-header { height: 50vh; }
-
   .menu-description { justify-content: center; }
   .menu-description article { width: 34.666667%; }
   .menu-description article:nth-child(1) {
@@ -847,17 +845,6 @@ a.backToTop {
   /* Special Menu */
   .special-desc span.price::before {
     content: " .........................................";
-  }
-  /* Menu */
-  header.menu-header {
-    height: 40vh;
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-1600.jpg");
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: 0 -55px;
   }
 
   .menu-description article { width: 99.666667%; }
@@ -1033,17 +1020,6 @@ a.backToTop {
   }
   .storeSpecials h3 { font-size: 85%; }
 
-  /* Menu */
-  header.menu-header {
-    height: 40vh;
-    background: -webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url("./img/menu-2-400.jpg");
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: 0 -55px;
-  }
   .banner h1 { font-size: 1.5em; }
   .starters .banner h1.first-item, .extras .banner h1.first-item {
     margin-top: 6em;
