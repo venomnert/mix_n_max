@@ -122,6 +122,13 @@ document.onreadystatechange = function () {
   }
 }
 
+function loadImages() {
+    var header = document.querySelector('.home-header');
+    if(window.devicePixelRatio >= 2) {
+        header.style.background = '-webkit-linear-gradient(rgba(40, 40, 48, 0.4), rgba(40, 40, 48, 0.4)), url(images/home-header-1280.jpg)';
+    }
+}
+
 converNodeList(dialog_nodes, dialog_array);
 converNodeList(plus_nodes, plus_array);
 converNodeList(close_nodes, close_array);
@@ -132,3 +139,4 @@ converNodeList(close_nodes, close_array);
 
 assignDialogShow(dialog_array,plus_array);
 assignDialogClose(dialog_array,close_array);
+loadImages();
