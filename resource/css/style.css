@@ -170,22 +170,23 @@ p.services {
 .specials-list div.special:nth-child(odd) {
   background-color: #E67E22;
 }
-.special-container img.special-food {
-  padding: 0 1.2em 0 0;
-  height: 135px;
-  width: 135px;
+.special-container i {
+  padding: 0.3em 0.35em 0 0;
+  font-size: 4em;
+  color: #EEE;
+}
+.specials-list .special:nth-child(even) .special-container i {
+  color: #E67E22;
 }
 
 .special-desc {
   padding: 1em 0 0 0;
 }
-
 .special-desc h4 {
   display: inline;
   margin: 1em 0 0 0;
   letter-spacing: 0.08em;
 }
-
 .special-desc span.price {
   font-size: 1.2em;
   color: #D04E33;
@@ -194,7 +195,6 @@ p.services {
 .specials-list div.special:nth-child(odd) .price{
   color: #EEE;
 }
-
 .special-desc span.price::before {
   content: " .............................................................";
   margin-right: 0.1em;
@@ -203,7 +203,6 @@ p.services {
   font-size: 0.6em;
   letter-spacing: inherit;
 }
-
 .special-desc p {
   margin: 1em 0 0 0;
   font-size: 0.7em;
