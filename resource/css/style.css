@@ -661,6 +661,7 @@ footer h6 {
   margin: 1em 0 1em 1em;
   color: #EEE;
   font-size: 0.7em;
+  display: none;
 }
 
 footer h6 a {
